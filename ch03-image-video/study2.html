@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 이미지 태그</title>
+</head>
+<body>
+    <p>반응형이란? 화면 너비에 반응하여 각 화면의 환경에 맞게 적절한 이미지를 보이게 하는 방식</p>
+    <p>768픽셀 이하 -> 모바일 환경</p>
+    <p>1024픽셀 이하 -> 탭/패드 환경</p>
+    <p>그 외 -> pc 환경</p>
+
+    <img src="./img/cat393.jpg" alt="고양이 사진"
+    srcset="
+    ./img/cat393.jpg 768w,
+    ./img/cat800.jpg 1024w,
+    ./img/cat1400.jpg 1920w
+    "
+    sizes="
+    (max-width:768px) 393px, 
+    (max-width:1024px) 800px, 
+    1920px
+    ">
+
+</body>
+</html>
