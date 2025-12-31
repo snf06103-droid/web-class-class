@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>회원가입예시</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>계정 정보</legend>
+            <div>
+                <label for="user-id">아이디</label>
+                <input type="text" id="user-id" required maxlength="10" disabled>
+            </div>
+            <div>
+                <label for="user-pw">비밀번호</label>
+                <input type="password" id="user-pw" required>
+            </div>
+            <div>
+                <label for="user-pw-con">비밀번호 확인</label>
+                <input type="password" id="user-pw-con" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>개인정보</legend>
+            <div>
+                <label for="user-name">이름</label>
+                <input type="text" id="user-name" required>
+            </div>
+            <div>
+                <label>성별</label>
+                <input type="radio" id="user-male" name="user-gender">
+                <label for="user-male">남자</label>
+                <input type="radio" id="user-female" name="user-gender">
+                <label for="user-female">여자</label>
+                <input type="radio" id="do-not" name="user-gender" checked>
+                <label for="do-not">선택안함</label>
+            </div>
+            <div>
+                <label for="user-birth">생년월일</label>
+                <input type="date" id="user-birth">
+            </div>
+            <div>
+                <label for="user-membership">전화번호</label>
+                <select id="user-membership">
+                    <option value="선택안함">선택안함</option>
+                    <option value="KT" selected>KT</option>
+                    <option value="SK" disabled>SK</option>
+                    <option value="U+">U+</option>
+                    <option value="알뜰폰">알뜰폰</option>
+                </select>
+                <input type="number" id="user-number">
+                <a href="#">인증하기</a>
+            </div>
+            <div>
+                <label for="number-confirm">인증번호</label>
+                <input type="number" id="number-confirm">
+                <a href="#">인증확인</a>
+            </div> 
+        </fieldset>
+        <fieldset>
+            <legend>기타정보</legend>
+            <div>
+                <label for="user-photo">사진</label>
+                <input type="file" id="user-photo">
+            </div>
+            <div>
+                <label for="user-profile">자기소개글</label>
+                <textarea id="user-profile"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>동의</legend>
+            <div>
+                개인정보처리방침 약관 동의 글 장문의 글...
+            </div>
+            <input type="checkbox" id="user-agree">
+            <label for="user-agree">위의 약관에 동의합니다</label>
+        </fieldset>
+        <button type="submit">가입하기</button>
+        <button type="reset">취소하기</button>
+    </form>
+</body>
+</html>
