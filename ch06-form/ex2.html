@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>CREATE YOUR ACCOUNT</h2>
+        <form action="#">
+            <div>
+                <label for="user-email">Email Address</label>
+                <input type="text" id="user-email">
+            </div>
+            <div>
+                <label for="adress-confirm">Confirm your Adress</label>
+                <input type="text" id="adress-confirm">
+            </div>
+            <div>
+                <label for="user-country">Country of Residence</label>
+                <select id="user-country">
+                    <option value="korea">korea</option>
+                    <option value="london">london</option>
+                    <option value="japan">japan</option>
+                    <option value="china">china</option>
+                </select>
+            </div>
+            <div id="captcha">
+                <input type="checkbox">
+                    I am human
+            </div>
+            <div>
+                <input type="checkbox"id="agree">
+                    <label for="agree">I am 13 years of age or older and agree to the terms of the <strong>Stem Subscriber Agreement</strong> and the <strong>Valve Privacy Policy.</strong></label>
+            </div>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+</body>
+</html>
