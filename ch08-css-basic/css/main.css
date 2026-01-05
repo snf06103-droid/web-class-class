@@ -1,0 +1,17 @@
+h2{
+    color: orange;
+    background-color:green;
+    font-size: 30px;
+}
+h2{
+    color: blue;
+    color: orange;
+}
+#a{color: skyblue;}
+.b{font-size:50px;}
+p.c{font-size:60px;color:#000}
+h2.c{color:lime;}
+p.a.b{color:gold;background-color:black;}
+.box h2{
+    background-color: gray;
+}
