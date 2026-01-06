@@ -1,0 +1,30 @@
+.box1 div:nth-of-type(2){
+    color: red;
+}
+.box1 div:nth-of-type(2n+1){
+    background-color: aquamarine;
+}
+.list>li:nth-of-type(3n){
+    color: blueviolet;
+}
+.list li:first-of-type{
+    background-color: cadetblue;
+}
+.list li:last-of-type{
+    background-color: chartreuse;
+}
+.li2+li{
+    text-decoration: underline;
+}
+.li2+li+li{
+    font-style: italic;
+}
+.li2~li{
+    font-size: 30px;
+}
+a[target="_blank"]{
+    color: coral;
+}
+h1,h2,h3{
+    
+}
