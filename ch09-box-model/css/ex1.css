@@ -1,0 +1,38 @@
+*{margin:0px; padding:0px;}
+.a{width:200px;border:10px solid #000}
+.b{width:300px;border:10px solid pink;padding:20px;}
+.c{width:400px;box-sizing: border-box;padding:30px;border:10px solid red;}
+/* 
+    a+b+c박스의 가로사이즈의 합은? 980
+*/
+.g{
+   width:200px;
+   height:200px;
+   padding-top:10px;
+   padding-bottom:10px;
+   padding-left:20px;
+   padding-right:20px;
+   border:10px solid red;
+}
+.h{
+    width:300px;
+    height:300px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    border-bottom:10px solid blue;
+}
+.i{
+    width:300px;
+    border:10px solid green;
+    margin-top:30px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+.i h1{padding:20px;}
+/* 
+    g가로사이즈 + g세로사이즈 + h세로사이즈 + h1태그의 컨텐트박스의 너비는? 1,110
+*/
