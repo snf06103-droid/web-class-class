@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#daum-container{
+    border: 1px solid red;
+    width: 1180px;
+    height: 500px;
+    /* margin-left: auto;
+    margin-right: auto; */
+margin: 0 auto;
+}
+#youtube-container{
+    border: 1px solid green;
+    width: auto;
+    height: 500px;
+    margin: 0 40px;
+}
