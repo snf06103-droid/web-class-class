@@ -14,5 +14,54 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 400;
 }
 .ex2{
-    line-height: 300px;
+    line-height: 1.5;
+}
+.ex3{
+    font-style: italic;
+}
+address{
+    font-style: normal;
+}
+.ex4{
+    letter-spacing: 50px;
+}
+.ex5{
+    word-spacing: 50px;
+    /* word-spacing: initial; */
+}
+.ex6{
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    white-space: pre-wrap;
+}
+.ex7{
+    text-indent: 100px;
+}
+.ex8{
+    text-decoration: underline;
+    text-decoration: line-through;
+}
+
+a{
+    text-decoration: none;
+}
+
+.ex9{
+    border:1px solid red;
+    text-align: justify;
+    width: 600px;
+    word-break: keep-all;
+}
+
+.ex10{
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+.ex11{
+    font-size: 40px;
+}
+.ex11 b{
+    font-size: 0.5em;
+    vertical-align: middle;
 }
