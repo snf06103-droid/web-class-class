@@ -1,0 +1,45 @@
+.a{
+    border: 1px solid red;
+    padding: 30px;
+    background-color: aquamarine; 
+    width: calc(700px + 100px); /* 800px이랑 같은 값 */
+    height: calc(80px*10);/* 800px이랑 같은 값 */
+    background-image: url(../img/dog.jpg);
+    background-repeat: no-repeat; 
+    /* 사진이 반복되지 않는다 기본값이 repeat이기 때문에 반복된 사진 나온다.*/
+    /* background-position: -100px 200px; */
+    /* background-position: 100% 100%; 오른쪽 아래에 뭍어있다 가운데 값은 50% 50%이다. */
+    /*background-position: calc(100% - 100px) 100%;  오른쪽에서 x축으로 -100px 이동된 사진 공식 */
+    /* background-size: auto auto;  다운받은 사진 기본 사이즈 값이다. */
+    /* background-size: 200px auto;  가로 200px 사이즈에 맞춰 자동으로 세로 사이즈 만들어진다. 반대도 똑같다. */
+    /* background-size: auto 100%;  선택한 태그의 높이만큼 세로 사이즈 맞춘다. */
+    /* background-size:  calc(100% - 100px) auto; */
+    /* background-size: cover; 
+    background-size: contain;
+ */
+}
+.b{
+    border: 1px solid blue;
+    height: 800px;
+    background: aquamarine url(../img/dog.jpg) no-repeat 50% 50% / cover;
+    background-attachment: fixed; /* 배경이미지가 뒤에 붙는다. 스크롤해도 그자리에 고정된다. */
+}
+.c{
+    border: 1px solid green;
+    height: 800px;
+    background: lime url(../img/dog.jpg) no-repeat 50% 50% / contain;
+    background-blend-mode: multiply;
+}
+.d{
+    border: 1px solid coral;
+    height: 800px;
+    background: 
+    url(../img/dog.jpg) no-repeat 0% 50% / auto auto, /* 가장 위에 있는 레이어다 밑으로 갈수록 깔리는 구조 */
+    url(../img/dog.jpg) no-repeat 50% 50% / contain,
+    url(../img/dog.jpg) no-repeat 100% 50% / auto 100px;
+}
+.e{
+    border: 1px solid orange;
+    height: 800px;
+    background: linear-gradient(30deg, red 20%,blue,green 80%);
+}
