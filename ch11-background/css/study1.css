@@ -34,7 +34,7 @@
     border: 1px solid coral;
     height: 800px;
     background: 
-    url(../img/dog.jpg) no-repeat 0% 50% / auto auto, /* 가장 위에 있는 레이어다 밑으로 갈수록 깔리는 구조 */
+    url(../img/dog.jpg) no-repeat 0% 50% / auto auto, /* 가장 위에 있는 레이어다. 밑으로 갈수록 깔리는 구조 */
     url(../img/dog.jpg) no-repeat 50% 50% / contain,
     url(../img/dog.jpg) no-repeat 100% 50% / auto 100px;
 }
