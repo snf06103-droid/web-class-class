@@ -1,0 +1,62 @@
+.aboreto{
+    font-family: "Aboreto", system-ui;
+}
+
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.banner{
+    border: 1px solid red;
+    height: 599px;
+    background: url(../img/7247350364b9abd890d544b50b85e6093c349f17.png) no-repeat 50% 50% / cover;
+}
+.banner h1{
+    border: 1px solid lime;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 13.5rem;
+}
+    /* margin을 주면 안 먹히는 이유: 
+    h1은 .banner의 자식이다. .banner은 가둬지는 프레임이 없는 상태. 따라서 h1태그가 밀어낼 공간이 없다. 자식이 부모의 벽을 밀어야 할때 벽(border/padding)이 없으면 여백이 바깥으로 빠지게 된다. 부모 태그에게 테두리/패딩를 만들면 해결된다. -> 
+    1번째 자식태그에게는 마진탑 적용하지 말자/ 마지막 자식태그에게는 마진바텀을 적용하지 말자 !약속!
+    */
+.content{
+    border: 1px solid red;
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.content h2{
+    font-size: 4rem;
+    line-height: 90%;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+.content p{
+    border-top: 1px solid #000;
+    line-height: 140%;
+    text-align: right;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+}
+.content figure{
+    border: 1px solid red;
+}
+.content figure img{
+    width: 1000px;
+    height: 430px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.content figcaption{
+    line-height: 140%;
+    text-transform: lowercase;
+}
+
