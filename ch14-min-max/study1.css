@@ -1,0 +1,35 @@
+.a{
+    border: 1px solid red;
+    max-width: 800px;
+    min-width: 300px;
+}
+p span{
+    border: 5px solid blue;
+    /* display: inline-block; */
+    min-width: 200px;
+    min-height: 200px;
+}
+.b{
+    border: 5px solid orange;
+    min-height: 100px;
+    max-height: 200px;
+    overflow: auto;
+}
+.c{
+    border: 5px solid brown;
+    width: 10vw;
+    height: 10vh;
+    margin-top: 100vh;
+    overflow: hidden;
+}
+.d{
+    border: 5px solid pink;
+    width: 600px;
+    min-height: 600px;
+}
+.f{
+    border: 5px solid red;
+    width: 50%;
+    height: 50%;
+    /* 부모 height 가 안정해져있기 때문에 적용되지 않는다. */
+}

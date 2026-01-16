@@ -1,0 +1,67 @@
+.a{
+    border: 10px solid red;
+    width: 300px;
+    height: 100px;
+    overflow: auto;
+}
+.b{
+    border: 10px solid blue;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.c{
+    border: 10px solid #000;
+    white-space: nowrap;
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 10px;
+}
+.d{
+    /* 외우지말고 복사해서 쓸 것 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 이 위까지 복사해서 쓸 것 */
+    border: 10px solid green;
+    width: 300px;
+}
+
+/* 외우지 말 것 */
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: red;
+}
+
+::-webkit-scrollbar-track{
+    background-color: aqua;
+}
+/* 외우지 말 것 */
+
+.e{
+    border: 10px solid coral;
+    width: 300px;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.e::-webkit-scrollbar{
+    width: 14px;
+    height: 14px;
+}
+
+.e::-webkit-scrollbar-thumb{
+    background: goldenrod;
+    border-radius: 6px; 
+    /* 반지름이 6px인 원의 호의 곡률이 적용된다. 70이라고 하면 안먹힌다. 가로너비 보고 정하기 */
+}
+
+.e::-webkit-scrollbar-track{
+    background-color: darkcyan;
+}
