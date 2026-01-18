@@ -21,8 +21,8 @@ figure{
     border: 1px solid green;
     width: 600px;
     aspect-ratio: 1/1;
-    line-height: 0;
-    font-size: 0;
+    /* line-height: 0; */
+    font-size: 0px;
 }
 figure .d{
     width: 100%;
