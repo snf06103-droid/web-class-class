@@ -29,6 +29,9 @@ main .banner{
     background: url(../img/7247350364b9abd890d544b50b85e6093c349f17.png) no-repeat 50% 50% / cover;
     height: 599px;
     margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 main .banner h1{
     /* border: 1px solid red; */
@@ -36,7 +39,7 @@ main .banner h1{
     font-size: 2.5rem;
     line-height: 100%;
     text-transform: uppercase;
-    padding-top: 13.5rem;
+    /* padding-top: 13.5rem; */
     text-align: center;
 }
 .wrap{
