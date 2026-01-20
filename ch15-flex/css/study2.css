@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 10px solid red;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    /* flex-wrap: wrap; */
+}
+.box section{
+    /* flex-shrink: 1; */
+    /* border: 1px solid blue; */
+    flex-basis: 200px;
+    /* width와 같은 뜻 플랙스 아이템에 사용가능 */
+    /* box-sizing: border-box; */
+}
+.box section:nth-of-type(2){
+    flex-shrink: 2;
+}
+
+.box2{
+    border: 10px solid blue;
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+.box2 section{
+    /* flex-grow: 1; */
+    /* flex-basis: 100px; */
+    flex: 1;
+    /* flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1; */
+}
+.box2 .a{
+    background-color: orange;
+/* flex-grow: 2; */
+}
+.b{background-color: blue;}
+.c{background-color: green;}
+.d{background-color: pink;}
