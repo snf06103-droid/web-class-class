@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.a{background-color: red;}
+.b{background-color: green;}
+.c{background-color: blue;}
+.d{background-color: gold;}
+.e{background-color: magenta;}
+.box{background-color: gray;}
+.box5{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.box5 div{
+    width: 100px;
+    height: 100px;
+}
+.box5 .a{order: 5;}
+.box5 .b{order: 4;}
+.box5 .c{order: 3;}
+.box5 .d{order: 2;}
+.box5 .e{order: 1;}
+
+.box6{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.box6 div{
+    flex-basis: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+/* .box7{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.box7 .content1 div{
+    width: 100px;
+    height: 100px;
+}
+.box7 .content2{
+    align-items: flex-end;
+    flex-direction: column;
+    display: flex;
+    
+}
+.box7 .content2 div{
+    width: 100px;
+    height: 100px;
+} */
+.box7{
+    border: 1px solid orange;
+    /* flex-wrap: wrap; */
+    width: 800px;
+    height: 300px;
+    display: flex;
+}
+.box7 .content2{
+    width: 400px;
+    height: 300px;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.box7 .content1{
+    width: 400px;
+    height: 300px;
+    background-color: lightgray;
+    /* display: flex;  세로 배치는 플랙스가 필요 없다.*/
+    /* flex-direction: column; */
+}
+.content1 div{
+    width: 100px;
+    height: 100px;
+}
+.content2 div{
+    width: 100px;
+    height: 100px;
+}
+/* 아래가 선생님 답안 */
+/* .box7{
+    width: 800px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.box7{
+    width: 100px;
+    height: 100px;
+} */
