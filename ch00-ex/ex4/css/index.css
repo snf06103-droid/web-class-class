@@ -7,23 +7,64 @@ html{
 }
 .wrap{
     width: 80rem;
-    margin: 0 auto;
+    margin: 6rem auto;
 }
 .wrap .banner{
     height: 30rem;
-    
     background: url(../img/back.jpg) no-repeat 50% 50% / cover;
-    
-    margin-top: 6rem;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 6rem;
 }
 .banner h1{
     font-size: 2.5rem;
     color: #fff;
+    text-transform: uppercase;
 }
 .wrap .content{
 
+}
+.content h2{
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+
+#text1 {
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 48px 0;
+}
+figure{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+figure img{
+    border-radius: 20px;
+}
+.img1 img{
+    width: 520px;
+    height: 434px;
+    object-fit: cover;
+}
+.content h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-transform: lowercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.content .text2{
+    line-height: 140%;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.img2 img{
+    width: 790px;
+    height: 434px;
+    object-fit: cover;
 }
