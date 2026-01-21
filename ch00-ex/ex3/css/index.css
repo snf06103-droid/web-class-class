@@ -1,0 +1,72 @@
+.abo{
+    font-family: "Aboreto", system-ui;
+}
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard' sans-serif; 
+}
+
+body{
+    background: url(../img/BACKGROUND.png) no-repeat 50% 55% / contain;
+}
+.wrap .banner{
+    /* border: 1px solid red; */
+    height: 599px;
+    background: url(../img/ex3-1.png) no-repeat 50% 50% / cover ;
+    border-radius: 0 0 150px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    
+    color: #fff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.wrap .content{
+    width: 1600px;
+    margin: 0 auto;
+    
+}
+.content h2{
+    padding-top: 10rem;
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: url(../img/Vector\ 1\ \(1\).svg) no-repeat 50% 0 ;
+}
+.content p{
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+.content figure{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 2.5rem;
+}
+figure img{
+    width: 790px;
+    height: 434px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+dl dt{
+    font-size: 2rem;
+    line-height: 140%;
+    text-transform: lowercase;
+    margin-bottom: 1rem;
+}
+dl dd{
+    line-height: 140%;
+    margin: .5rem 0;
+    text-transform: lowercase;
+}
+span{
+    color: #770000;
+}
