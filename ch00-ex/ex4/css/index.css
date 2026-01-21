@@ -1,0 +1,29 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+}
+.abo{
+    font-family: "Aboreto", system-ui;
+}
+.wrap{
+    width: 80rem;
+    margin: 0 auto;
+}
+.wrap .banner{
+    height: 30rem;
+    
+    background: url(../img/back.jpg) no-repeat 50% 50% / cover;
+    
+    margin-top: 6rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+.wrap .content{
+
+}
