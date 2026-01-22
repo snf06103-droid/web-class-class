@@ -59,7 +59,6 @@ html{
 }
 ul li{
     flex: 1;
-    height: 634px;
 }
 li div{
     aspect-ratio: 1/1;
