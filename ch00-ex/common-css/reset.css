@@ -16,6 +16,9 @@ address{
 ul,ol{
     list-style: none;
 }
-dl,dt,dd{
-    
+em,address,i{
+    font-style: inherit;
+}
+strong,b{
+    font-weight: inherit;
 }

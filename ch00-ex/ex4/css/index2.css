@@ -1,21 +1,22 @@
-html{
-    font-size: 20px;
-    font-weight: 400;
+.abo{
+    font-family: "Aboreto", system-ui;
 }
 body{
     background: url(../img/bg.png) no-repeat 50% 50% ;
 }
-.abo{
-    font-family: "Aboreto", system-ui;
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
 }
 .wrap{
     width: 1600px;
     margin: 6rem auto;
 }
-.wrap .banner{
-    height: 30rem;
+.banner{
+    border-radius: 2.5rem;
+    height: 599px;
     background: url(../img/back.jpg) no-repeat 50% 50% / cover;
-    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,46 +27,59 @@ body{
     color: #fff;
     text-transform: uppercase;
 }
-.content h2{
+.container h2{
     font-size: 7.5rem;
     line-height: 90%;
     text-transform: uppercase;
 }
-
-#text1 {
+.container .desc1{
     line-height: 140%;
     text-transform: uppercase;
-    margin: 48px 0;
+    margin: 2.4rem 0;
 }
-figure{
+.cafe-photo1{
     display: flex;
-    gap: 20px;
+    gap: 1rem;
     margin-bottom: 2rem;
+}
+.cafe-photo1 figure{
+    flex: 1;
+    aspect-ratio: 520/434;
     font-size: 0;
 }
-figure img{
-    border-radius: 20px;
-}
-.img1 img{
-    width: 520px;
-    height: 434px;
+.cafe-photo1 figure img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 1rem;
 }
-.content h3{
+.wrap h3{
     font-size: 2rem;
     line-height: 140%;
     text-transform: lowercase;
     text-align: center;
     margin-bottom: 1rem;
 }
-.content .text2{
+.wrap .desc2{
     line-height: 140%;
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 2rem;
 }
-.img2 img{
-    width: 790px;
-    height: 434px;
+.cafe-photo2{
+    display: flex;
+    gap: 1rem;
+}
+.cafe-photo2 figure{
+    flex: 1;
+    aspect-ratio: 790/434;
+    font-size: 0;
+}
+.cafe-photo2 figure img{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 1rem;
 }
