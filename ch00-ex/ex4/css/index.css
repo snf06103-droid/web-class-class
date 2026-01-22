@@ -1,6 +1,7 @@
 html{
     font-size: 20px;
     font-weight: 400;
+    font-family: 'Pretendard', sans-serif;
 }
 body{
     background: url(../img/bg.png) no-repeat 50% 50% ;
