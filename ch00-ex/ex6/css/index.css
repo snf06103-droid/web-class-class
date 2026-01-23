@@ -1,0 +1,38 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard', sans-serif;
+}
+.stp1{
+    font-family: 아보;
+}
+header{
+
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+}
+ul li{
+    padding: 1.9rem 1rem;
+    text-transform: uppercase ;
+}
+.banner{
+    height: 700px;
+    background: url(../img/bg.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    color: #fff;
+    font-size: 7.5rem;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
