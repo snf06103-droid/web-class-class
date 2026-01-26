@@ -11,7 +11,7 @@ html{
 .banner{
     border: 1px solid red;
     height: 599px;
-    background: url(../img/7247350364b9abd890d544b50b85e6093c349f17.png) no-repeat 50% 50% / cover;
+    background: url(../img/bg.png) no-repeat 50% 50% / cover;
 }
 .banner h1{
     border: 1px solid lime;

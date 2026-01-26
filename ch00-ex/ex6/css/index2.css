@@ -7,17 +7,20 @@ html{
     font-family: 아보;
 }
 header{
-    width: 1600px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    width: 1600px;
+    margin: 0 auto;
 }
-ul{
+nav ul{
     display: flex;
 }
 ul li{
     padding: 1.9rem 1rem;
     text-transform: uppercase ;
+}
+figure{
+    line-height: 0;
 }
 .banner{
     height: 700px;
