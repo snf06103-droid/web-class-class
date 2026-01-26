@@ -1,75 +1,75 @@
 html{
     font-size: 20px;
-    font-family: 'Pretendard';
     font-weight: 400;
+    font-family: 'Pretendard', sans-serif;
 }
 .stp1{
     font-family: "아보";
 }
-
-.common-frame {
+.wrap{
+    background: url(../img/bg.png) no-repeat 50% 50% / contain;
+}
+.common-frame{
     width: 1600px;
     margin: 0 auto;
     padding-top: 6rem;
 }
-.banner{
+.common-frame .banner{
     height: 599px;
-    border-radius: 2.5rem;
     background: url(../img/back.jpg) no-repeat 50% 50% / cover;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2.5rem;
     margin-bottom: 6rem;
 }
-.banner h1{
+.banner .title-1{
     color: #fff;
     font-size: 2.5rem;
     line-height: 100%;
     text-transform: uppercase;
 }
-.common-frame h2{
+.common-frame .title-2{
     font-size: 7.5rem;
     line-height: 90%;
     text-transform: uppercase;
-} 
-.desc1{
+}
+.common-frame .desc1{
     line-height: 140%;
     text-transform: uppercase;
     margin: 2.4rem 0;
 }
-.gallery{
+.cafe-gal{
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
 }
-.gallery figure{
-    flex: 1;
+.cafe-gal figure{
     aspect-ratio: 520/434;
+    flex: 1;
 }
-.gallery figure img{
-    max-width: 100%;
+.cafe-gal figure img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
 }
-.common-frame h3{
-    font-size: 2rem;
-    line-height: 140%;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-.desc2{
-    line-height: 140%;
-    text-transform: capitalize;
-    text-align: center;
+.ver1{
     margin-bottom: 2rem;
 }
-.gallery.type2 figure{
-    flex: 1;
+.ver2 figure{
     aspect-ratio: 790/434;
+
 }
-.wrap{
-    background: url(../img/bg.png) no-repeat 50% 0% / 100% auto ;
+.title-3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.common-frame .desc2{
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
 }
