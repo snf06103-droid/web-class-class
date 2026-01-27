@@ -1,0 +1,42 @@
+.box1{
+    width: 500px;
+    height: 500px;
+    background: gray;
+    position: relative;
+    left: 0px;
+    bottom: 100px;
+    opacity: .5;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 2;
+}
+.box3{
+    background-color: orange;
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.a{
+    width:100px;
+    height: 100px;
+    background-color: red; 
+    position: absolute;
+    left: 150px;
+    top: 150px;
+    z-index: 1;
+}
+.box4{
+    background-color: green;
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    width:100px;
+    height: 100px;
+}
