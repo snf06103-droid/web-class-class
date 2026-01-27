@@ -1,10 +1,18 @@
 html{
     font-size: 20px;
+<<<<<<< HEAD
     font-weight: 400;git
     font-family: 'Pretendard';
+=======
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+>>>>>>> 34f4a86b407776cd8aedbb1cfef363b2438a82a1
 }
 .stp1{
     font-family: 아보;
+}
+.wrap{
+    background: url(../img/BACKGROUND.png) repeat-x 50% 55% / contain;
 }
 .banner{
     height: 599px;
@@ -14,9 +22,63 @@ html{
     justify-content: center;
     align-items: center;
 }
+.container{
+    width: 1600px;
+    margin: 0 auto;
+}
 .title1{
     color: #fff;
     font-size: 2.5rem;
     line-height: 100%;
     text-transform: uppercase;
+}
+.content1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.content1 .title2{
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10rem;
+    background: url(../img/deco.svg) 50% 0 no-repeat;
+    margin-bottom: 2rem;
+}
+.content1 .desc1{
+    line-height: 140%;
+    text-transform: uppercase;
+}
+em{
+    color: #770000;
+}
+.content2 .gal{
+    height: 434px;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+.gal figure{
+    flex: 1;
+    aspect-ratio: 790/434;
+    font-size: 0;
+}
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.content2 .title3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.content2 .desc2,.desc3{
+    line-height: 140%;
+    margin-bottom: .5rem;
+}
+strong{
+    font-weight: 600;
 }
