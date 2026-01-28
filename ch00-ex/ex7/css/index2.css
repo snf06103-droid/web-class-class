@@ -8,13 +8,15 @@ html{
     margin: 0 auto;
 }
 header{
-   
+    position: fixed;
+    border-bottom: 2px solid #BE0707;
+    left: calc(50% - 800px);
+    top: 0;
 }
 header .common-frame{
     height: 100px;
-    position: fixed;
-    left: calc(50% - 800px);
-    top: 0;
+    
+    
     display: flex;
     justify-content: space-between;
 }
@@ -41,7 +43,7 @@ ul li a{
     height: 70px;
 }
 .hero-banner{
-    height: 963px;
+    height: 100vh;
     background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
     display: flex;
     justify-content: center;
