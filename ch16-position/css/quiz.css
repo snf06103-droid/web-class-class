@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background-color: gray;
+    width: 800px;
+    height: 300px;
+    margin: 800px auto;
+}
+.a{background-color: red;}
+.b{background-color: green;}
+.c{background-color: blue;}
+.d{background-color: yellow;}
+.e{background-color: pink;}
+
+.box-1>section{
+    width: 100px;
+    height: 100px;
+}
+.box-1{
+    position: relative;
+}
+.box-1 .a{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.box-1 .b{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.box-1 .c{
+    position: absolute;
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}
+.box-1 .d{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.box-1 .e{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.box-2{
+    position: relative;
+}
+.box-2>section{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.box-2 .a{
+    left: -100px;
+    top: -100px;
+}
+.box-2 .c{
+    left: calc(50% - 50px);
+    bottom: -100px;
+}
+.box-2 .b{
+    left: -100px;
+    bottom: -100px;
+}
+.box-2 .d{
+    right: -100px;
+    top: -100px;
+}
+.box-2 .e{
+    right: -100px;
+    bottom: -100px;
+}
+
+.box-3{
+    position: relative;
+}
+.box-3 section{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+}
+.box-3 .a{
+    left: 0;
+    top: -100%;
+}
+.box-3 .b{
+    left: 20%;
+    bottom: -100%;
+}
+.box-3 .c{
+    left: 40%;
+    top: -100%;
+}
+.box-3 .d{
+    left: 60%;
+    bottom: -100%;
+}
+.box-3 .e{
+    left: 80%;
+    top: -100%;
+}
+
+
+.box-4{
+    position: relative;
+}
+.box-4 section{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+.box-4 section.a{
+    left: 0;
+    top: -50%;
+}
+.box-4 section.a .c{
+    right: 0;
+    top: 0;
+}
+.box-4 section.a .b{
+    right: 0;
+    bottom: 0;
+}
+.box-4 section.d{
+    right: 0;
+    bottom: -50%;
+}
+.box-4 section div{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.box-4 section.d .e{
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+}

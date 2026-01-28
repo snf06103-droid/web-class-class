@@ -1,0 +1,80 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.common-frame{
+    width: 1600px;
+    margin: 0 auto;
+}
+header{
+   
+}
+header .common-frame{
+    height: 100px;
+    position: fixed;
+    left: calc(50% - 800px);
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.lnb{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+.gnb{
+    display: flex;
+}
+ul li a{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.lnb li a{
+    height: 30px;
+}
+.gnb li a{
+    width: 138px;
+    height: 70px;
+}
+.hero-banner{
+    height: 963px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.hero-banner h1{
+    color: #fff;
+    font-size: 7rem;
+    line-height: 90%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    width: 1600px;
+}
+.wrap h2{
+    font-size: 3rem;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.desc1{
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.banner{
+    height: 441px;
+    background: url(../img/gal.jpg) no-repeat 50% 50% / cover;
+}
+.wrap{
+    margin-bottom: 7.75rem;
+}
