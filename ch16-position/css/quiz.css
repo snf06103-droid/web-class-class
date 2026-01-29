@@ -139,3 +139,69 @@
     left: calc(50% - 50px);
     top: calc(50% - 50px);
 }
+
+.box-5{
+    position: relative;
+}
+.box-5 section{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.box-5 .a{
+    left: -100px;
+    top: -100px;
+    z-index: 1;
+}
+.box-5 .b{
+    left: -50px;
+    top: -50px;
+}
+.box-5 .c{
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.box-5 .d{
+    left: 50px;
+    top: 50px;
+}
+.box-5 .e{
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+}
+
+.box-6{
+    display: flex;
+}
+.box-6>section{
+    flex:1;
+    position: relative;
+}
+.box-6 .a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-6 .c{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    top: 0;
+}
+.box-6 .b div{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+}
+.box-6 .d{
+    left: 0;
+    bottom: 0;
+}
+.box-6 .e{
+    right: 0;
+    bottom: 0;
+}
+
