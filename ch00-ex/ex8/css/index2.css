@@ -63,7 +63,7 @@ header .inner-frame{
 header{
     max-height: 100px;
     overflow: hidden;
-    transition: max-height 0.4s ease;
+    transition: max-height 0.3s ease;
 }
 header:hover{
     max-height: 266px;
