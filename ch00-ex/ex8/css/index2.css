@@ -1,0 +1,70 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+
+.wrap{
+    margin: 5rem 0;
+}
+header{
+    width: 100vw;
+    height: 266px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+}
+header .inner-frame{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 0;
+}
+.gnb{
+    display: flex;
+    gap: 3.3rem;
+}
+.gnb>li>a{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.dep a{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 100%;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.banner{
+    height: 800px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    color: #fff;
+    font-size: 7rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+header{
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+header:hover{
+    max-height: 266px;
+}
