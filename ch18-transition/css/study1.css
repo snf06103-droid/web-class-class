@@ -1,0 +1,46 @@
+.a {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 10px solid red;
+    /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s; */
+    /* transition:
+    width 1s ease 0s, 
+    height 1s ease 1s,
+    background-color 1s ease 2s; */
+    transition: all 1s ease 0s;
+}
+.a:hover{
+    width: 600px;
+    height: 600px;
+    background-color: pink;
+    padding: 30px;
+}
+.box{
+    background-color: #ddd;
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+}
+.b{
+    background-color: orange;
+    height: 200px;
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.box:hover .b{
+    opacity: 1;
+}
+
+.c{
+    background-color: green;
+    height: 200px;
+    display: none;
+    transition: all 1s ease 0s;
+}
+.box:hover .c{
+    display: block;
+}
