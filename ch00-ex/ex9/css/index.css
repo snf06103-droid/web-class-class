@@ -1,0 +1,31 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.inner-header{
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    line-height: 0;
+}
+.gnb{
+    display: flex;
+    gap: .5rem;
+}
+.gnb>li>a{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.banner{
+    height: 800px;
+    background: url(../img/bg.mp4) no-repeat 50% 50% / cover;
+}
