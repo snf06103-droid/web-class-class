@@ -11,13 +11,14 @@ html{
     margin: 5rem 0;
 }
 header{
+
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    max-height: 100px;
-    overflow: hidden;
-    /* border: 2px solid pink; */
+    /* max-height: 100px;
+    overflow: hidden; */
+    border: 2px solid pink;
 }
 header .inner-header{
     display: flex;
@@ -35,11 +36,13 @@ header .inner-header{
     text-transform: uppercase;
 }
 .gnb>li{
-    /* border: 1px solid rgb(46, 19, 100); */
+    background-color: #fff;
+    border: 1px solid rgb(46, 19, 100);
     padding: 0 .5rem .5rem;
     width: 200px;
     /* height: 100px; */
     box-sizing: border-box;
+    border-radius: 0 0 5px 5px;
 }
 .gnb>li>a{
     /* border: 1px solid rgb(211, 108, 158); */
