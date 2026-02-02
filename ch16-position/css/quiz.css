@@ -8,11 +8,26 @@
     height: 300px;
     margin: 800px auto;
 }
-.a{background-color: red;}
-.b{background-color: green;}
-.c{background-color: blue;}
-.d{background-color: yellow;}
-.e{background-color: pink;}
+.a{
+    background-color: red;
+    transition: all 1s ease;
+}
+.b{
+    background-color: green;
+    transition: all 1s ease;
+}
+.c{
+    background-color: blue;
+    transition: all 1s ease;
+}
+.d{
+    background-color: yellow;
+    transition: all 1s ease;
+}
+.e{
+    background-color: pink;
+    transition: all 1s ease;
+}
 
 .box-1>section{
     width: 100px;
@@ -20,35 +35,68 @@
 }
 .box-1{
     position: relative;
+    overflow: hidden;
 }
+
+
+
+
+
 .box-1 .a{
     position: absolute;
     left: 0px;
     top: 0px;
 }
+.box-1:hover .a{
+    left: -100px;
+    top: -100px;
+}
+
 .box-1 .b{
     position: absolute;
     left: 0px;
     bottom: 0px;
 }
+.box-1:hover .b{
+    left: -100px;
+    bottom: -100px;
+}
+
 .box-1 .c{
     position: absolute;
     left: calc(50% - 50px);
     top: calc(50% - 50px);
 }
+
 .box-1 .d{
     position: absolute;
     right: 0px;
     top: 0px;
 }
+.box-1:hover .d{
+    right: -100px;
+    top: -100px;
+}
+
 .box-1 .e{
     position: absolute;
     right: 0px;
     bottom: 0px;
 }
+.box-1:hover .e{
+    right: -100px;
+    bottom: -100px;
+}
+
+
+
+
+
+
 
 .box-2{
     position: relative;
+    overflow: hidden;
 }
 .box-2>section{
     width: 100px;
@@ -59,25 +107,59 @@
     left: -100px;
     top: -100px;
 }
+.box-2:hover .a{
+    left: 0;
+    top: 0;
+}
+
 .box-2 .c{
     left: calc(50% - 50px);
     bottom: -100px;
 }
+.box-2:hover .c{
+    bottom: calc(50% - 50px);
+}
+
 .box-2 .b{
     left: -100px;
     bottom: -100px;
 }
+.box-2:hover .b{
+    left: 0;
+    bottom: 0;
+}
+
 .box-2 .d{
     right: -100px;
     top: -100px;
 }
+.box-2:hover .d{
+    right: 0;
+    top: 0;
+}
+
 .box-2 .e{
     right: -100px;
     bottom: -100px;
 }
+.box-2:hover .e{
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 .box-3{
     position: relative;
+    overflow: hidden;
 }
 .box-3 section{
     position: absolute;
@@ -88,22 +170,51 @@
     left: 0;
     top: -100%;
 }
+.box-3:hover .a{
+    top: 0;
+}
+
 .box-3 .b{
     left: 20%;
     bottom: -100%;
 }
+.box-3:hover .b{
+    bottom: 0;
+}
+
 .box-3 .c{
     left: 40%;
     top: -100%;
 }
+.box-3:hover .c{
+    top: 0;
+}
+
 .box-3 .d{
     left: 60%;
     bottom: -100%;
 }
+.box-3:hover .d{
+    bottom: 0;
+}
+
 .box-3 .e{
     left: 80%;
     top: -100%;
 }
+.box-3:hover .e{
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 .box-4{
@@ -140,6 +251,16 @@
     top: calc(50% - 50px);
 }
 
+
+
+
+
+
+
+
+
+
+
 .box-5{
     position: relative;
 }
@@ -171,6 +292,14 @@
     top: 100px;
     z-index: 1;
 }
+
+
+
+
+
+
+
+
 
 .box-6{
     display: flex;
