@@ -1,0 +1,98 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+header{
+    border-bottom: 2px solid #BE0707;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+}
+header .inner-frame{
+    border: 1px solid lime;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    line-height: 0;
+}
+nav{
+    width: 966px;
+}
+nav .lnb{
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-size: .8rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.lnb li{
+    border: 1px solid red;
+}
+.gnb{
+    border: 1px solid red;
+    height: 70px;
+    display: flex;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.gnb li{
+    flex: 1;
+}
+.gnb a{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.banner{
+    height: 100vh;
+    background: url(../img/banner.jpg)  no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-bottom: 6rem;
+}
+.banner h1{
+    width: 1600px;
+    font-size: 7rem;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+.c1 h2{
+    font-size: 3rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.c1 p{
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+.inner-frame .sub-banner{
+    height: 441px;
+}
+.sub-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

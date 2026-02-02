@@ -6,26 +6,91 @@ html{
 .inner-header{
     width: 1600px;
     margin: 0 auto;
+}
+.wrap{
+    margin: 5rem 0;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100px;
+    overflow: hidden;
+    /* border: 2px solid pink; */
+}
+header .inner-header{
     display: flex;
     justify-content: space-between;
 }
 .logo{
+    /* border: 1px solid red; */
     line-height: 0;
 }
 .gnb{
+    /* border: 1px solid rgb(73, 155, 64); */
     display: flex;
     gap: .5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.gnb>li{
+    /* border: 1px solid rgb(46, 19, 100); */
+    padding: 0 .5rem .5rem;
+    width: 200px;
+    /* height: 100px; */
+    box-sizing: border-box;
 }
 .gnb>li>a{
+    /* border: 1px solid rgb(211, 108, 158); */
     display: flex;
     height: 100px;
     align-items: center;
     margin-bottom: 1rem;
-    font-size: 18px;
-    line-height: 100%;
-    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.dap li{
+    /* border: 1px solid green; */
+    margin-top: 1rem;
+    font-size: .8rem;
+}
+.dap li a{
+    display: flex;
+    
+    /* border: 1px solid rgb(53, 99, 216); */
+}
+.banner video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .banner{
+    position: relative;
+    /* border: 1px solid red; */
     height: 800px;
-    background: url(../img/bg.mp4) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.floating-txt{
+    position: absolute;
+    width: 1600px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    /* line-height: 100%;
+    text-transform: uppercase; */
+}
+.floating-txt h1{
+    font-size: 7rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.floating-txt p{
+    font-weight: 500;
+    line-height: 100%;
+    text-transform: uppercase;
 }
