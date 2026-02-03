@@ -4,31 +4,46 @@ html{
     font-family: 'Pretendard',sans-serif;
 }
 header{
+    width: 100%;
     max-height: 100px;
     background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.wrap{
+    margin-top: 5rem;
 }
 .inner-frame{
-    
     width: 1600px;
     margin: 0 auto;
 }
 header .inner-frame{
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
 }
 .gnb{
-    border: 2px solid lime;
     display: flex;
     line-height: 100%;
     text-transform: uppercase;
 }
 .gnb>li{
+    background-color: #fff;
     padding: .5rem;
-    padding-top: 0
+    padding-top: 0;
+    width: 200px;
+    max-height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all .6s ease ;
+    border-radius: 0 0 5px 5px;
+}
+.gnb>li:hover{
+    max-height: 500px;
 }
 .gnb>li>a{
-    border: 2px solid violet;
+    
     display: flex;
     height: 100px;
     align-items: center;
@@ -37,7 +52,6 @@ header .inner-frame{
     font-size: .9rem;
 }
 .dap>li>a{
-    border: 2px solid purple;
     display: flex;
     margin-top: 1rem;
     font-size: .8rem;
@@ -45,7 +59,7 @@ header .inner-frame{
 .banner{
     height: 800px;
     position: relative;
-    line-height: 100%;
+    text-align: center;
     text-transform: uppercase;
     color: #fff;
 }
@@ -55,11 +69,18 @@ header .inner-frame{
     object-fit: cover;
 }
 .banner .floating-txt{
-    border: 2px solid navy;
     position: absolute;
     left: 50%;
     top: 50%;
     transform:
     translate(-50%,-50%);
 }
-
+.floating-txt h1{
+    line-height: 100%;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+}
+.floating-txt p{
+    line-height: 100%;
+    font-weight: 500;
+}
