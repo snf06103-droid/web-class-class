@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+header{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between; 
+    max-height: 80px;
+    overflow: hidden;
+    background: pink;
+    transition: all .4s ease 0s;
+}
+header:hover{
+    max-height: 400px;
+}
+
+.logo{
+    border: 1px solid blue;
+}
+.gnb{
+    border: 1px solid blue;
+    display: flex;
+}
+.gnb>li{
+    border: 1px solid green;
+}
+.gnb>li>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: red;
+
+}

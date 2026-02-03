@@ -53,3 +53,19 @@
 .l{background-color:honeydew;}
 .l:hover{transform: skewY(30deg);}
 
+.banner{
+    height: 600px;
+    background-color: pink;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+.banner div{
+    position: absolute;
+    left: 50%;
+    transform: 
+    translate(-50%,-50%);
+    top: 50%;
+    border: 1px solid red;
+}

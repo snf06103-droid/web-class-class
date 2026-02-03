@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.gnb{
+    width: 300px;
+}
+.gnb a{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+.gnb ul{
+    background-color: aqua;
+}
+.gnb li{
+    max-height: 50px;
+    overflow: hidden;
+    transition: all .6s ease 0s;
+}
+.gnb>li:hover{
+    max-height: 500px;
+}

@@ -11,14 +11,13 @@ html{
     margin: 5rem 0;
 }
 header{
-
+    background-color: #fff;
     width: 100%;
-    position: fixed;
+    position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
-    /* max-height: 100px;
-    overflow: hidden; */
-    border: 2px solid pink;
+    max-height: 100px;
 }
 header .inner-header{
     display: flex;
@@ -31,13 +30,13 @@ header .inner-header{
 .gnb{
     /* border: 1px solid rgb(73, 155, 64); */
     display: flex;
-    gap: .5rem;
+    /* gap: .5rem; */
     line-height: 100%;
     text-transform: uppercase;
 }
 .gnb>li{
     background-color: #fff;
-    border: 1px solid rgb(46, 19, 100);
+    /* border: 1px solid rgb(46, 19, 100); */
     padding: 0 .5rem .5rem;
     width: 200px;
     /* height: 100px; */
@@ -53,6 +52,48 @@ header .inner-header{
     font-size: .9rem;
     font-weight: 600;
 }
+.gnb .li-1{
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height .3s ease 0s;
+}
+.gnb .li-1:hover{
+    max-height: 227px;
+}
+.gnb .li-2{
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height .3s ease 0s;
+}
+.gnb .li-2:hover{
+    max-height: 227px;
+}
+.gnb .li-3{
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height .3s ease 0s;
+}
+.gnb .li-3:hover{
+    max-height: 227px;
+}
+.gnb .li-4{
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height .3s ease 0s;
+}
+.gnb .li-4:hover{
+    max-height: 227px;
+}
+.gnb .li-5{
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height .3s ease 0s;
+}
+.gnb .li-5:hover{
+    max-height: 227px;
+}
+
+
 .dap li{
     /* border: 1px solid green; */
     margin-top: 1rem;
@@ -60,7 +101,6 @@ header .inner-header{
 }
 .dap li a{
     display: flex;
-    
     /* border: 1px solid rgb(53, 99, 216); */
 }
 .banner video{
@@ -97,3 +137,4 @@ header .inner-header{
     line-height: 100%;
     text-transform: uppercase;
 }
+
