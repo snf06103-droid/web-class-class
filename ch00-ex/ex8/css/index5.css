@@ -1,0 +1,62 @@
+html{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.inner-frame{
+    width: 1600px;
+    margin: 0 auto;
+}
+header .inner-frame{
+    display: flex;
+    justify-content: space-between;
+}
+.gnb{
+    display: flex;
+    gap: 3.3rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.gnb>li>a{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: .9rem;
+}
+.dap>li>a{
+    display: flex;
+    margin-top: 1rem;
+    font-size: .8rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 266px;
+    background-color: #fff;
+    max-height: 100px;
+    overflow: hidden;
+    transition: all .6s ease ;
+}
+header:hover{
+    max-height: 500px;
+}
+.wrap{
+    margin-top: 5rem;
+}
+.banner{
+    height: 800px;
+    background: url(../img/banner.jpg) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.banner h1{
+    font-size: 7rem;
+}
