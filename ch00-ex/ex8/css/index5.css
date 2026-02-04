@@ -25,9 +25,15 @@ header .inner-frame{
     font-weight: 600;
     font-size: .9rem;
 }
-.dap>li>a{
+.dap{
+    border: 1px solid red;
     display: flex;
-    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+.dap>li>a{
+    border: 1px solid red;
+    display: flex;
     font-size: .8rem;
 }
 header{
