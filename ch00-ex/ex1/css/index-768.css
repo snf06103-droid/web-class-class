@@ -1,0 +1,9 @@
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .wrap {
+        width: auto;
+        margin: 75px 1rem;
+}
+}

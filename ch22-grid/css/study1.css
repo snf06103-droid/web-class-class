@@ -4,15 +4,20 @@
 .box{
     border: 1px solid red;
     display: grid;
+    height: 1200px;
     gap: 10px 20px;
+    grid-template-columns: 200px 200px 200px 200px;
     /* grid-template-columns: 100px 200px 300px 1fr; */
     /* grid-template-columns: 25% 25% 25%; */
     /* grid-template-columns: 150px repeat(2,20%) 100px; */
     /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: repeat(4,1fr);
+    /* grid-template-columns: repeat(4,1fr); */
     /* grid-template-rows: repeat(5,minmax(100px,auto)); */
     grid-auto-rows: minmax(100px,auto);
-
+    justify-content: end;
+    justify-items: center;
+    align-content: start;
+    align-items: center;
 }
 .box section{
     border: 1px solid blue;
@@ -21,4 +26,7 @@
     background-color: palegreen;
     grid-column: 1/3;
     grid-row: 1/3;
+    align-self: stretch;
+    justify-self: stretch;
 }
+

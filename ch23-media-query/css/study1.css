@@ -1,0 +1,16 @@
+ @media (min-width:1024px){
+     /* 화면 너비가 최고 1024픽셀 이상일 때 적용되는 스타일  */
+    .container{
+        background-color: pink;
+    }
+}
+@media (min-width:768px) and (max-width:1023px){
+    .container{
+        background-color: skyblue;
+    }
+}
+@media (max-width:767px){
+    .container{
+        background-color: yellowgreen;
+    }
+} 

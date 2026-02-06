@@ -1,0 +1,15 @@
+@media (max-width:1920px){
+    .container{
+        background-color: tomato;
+    }
+}
+@media (max-width:1024px){
+    .container{
+        background-color: skyblue;
+    }
+}
+@media (max-width:768px){
+    .container{
+        background-color: palegreen;
+    }
+}
