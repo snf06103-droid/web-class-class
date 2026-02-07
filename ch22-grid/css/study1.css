@@ -19,7 +19,7 @@
     align-content: start;
     align-items: center;
 }
-.box section{
+section{
     border: 1px solid blue;
 }
 .box section:nth-last-of-type(6){
@@ -30,3 +30,22 @@
     justify-self: stretch;
 }
 
+.box2{
+    height: 1000px;
+    border: 2px solid rosybrown;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:100px 200px 150px ;
+    grid-template-rows: repeat(3 minmax(100px,auto));
+    grid-template-rows: repeat(4, 100px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.box2 section:nth-last-of-type(5){
+    justify-self: stretch;
+    align-self: stretch;
+    grid-column: 2/4;
+    grid-row: 1/3;
+}

@@ -1,0 +1,18 @@
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .common-frame{
+        margin: 0 1rem;
+    }
+    .cafe-gal {
+    flex-direction: column;
+    }
+    .cafe-gal figure {
+        aspect-ratio: 365/200;
+        height: 200px;
+    }
+    h2.deco-title {
+    background: url(../img/deco.svg) no-repeat 50% -60px;
+    }
+}
