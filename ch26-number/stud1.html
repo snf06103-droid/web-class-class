@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number</title>
+</head>
+<body>
+    <h1>숫자데이터</h1>
+    <h1>typeof()는 괄호 안의 데이터 형태를 검사하고 그 결과를 문자데이터 형태로 알려주는 도구 (함수)</h1>
+    <script>
+        console.log(100)
+        console.log(100+10)
+        console.log(10*2)
+        console.log(10-200)
+        console.log(100/5)
+        console.log(100%3)
+        console.log(100+"100")
+        "장윤서".length*3 //은 "3"*3으로 계산되는데 이게 숫자인지 문자인지 알기 힘들다 그럴때 아래와 같이 typeof()안에 넣어서 확인한다.
+        console.log(typeof("장윤서".length))
+        console.log(typeof(typeof("장윤서".length)))//string이라고 콘솔에 나온다. 파랑괄호 :tpeof(3) 핑크 괄호 : "number" 노랑괄호 : "string" 순서로 계산 된 것이다. 
+        console.log((typeof(typeof("장윤서".length)))[3]) //i라고 콘솔에 나온다. 
+    </script>
+    <h1>string()</h1>
+    <p>숫자데이터를 문자데이터로 바꿔주는 함수</p>
+    <script>
+        100
+        "100"
+        String(100) //100을 확실하게 문자로 바꿔주는 함수이다.  100으로 해석되던 숫자가 "100"이라고 문자데이터로 해석된다. 
+        console.log(typeof(String(100)))
+    </script>
+    <h1>Number()</h1>
+    <p>문자데이터를 숫자데이터로 바꿔주는 함수</p>
+    <script>
+        Number("455")
+        console.log(Number("455"))
+        455
+    </script>
+    <h1>prompt</h1>
+    <p>홈페이지의 사용자에게 괄호안의 질문을 한 후 사용자가 입력한 대답을 (prompt함수가 실행되었던 자리에) 문자데이터 형태로 남겨주는 함수</p>
+    <script>
+        prompt("당신의 이름이 무엇인가요~?")
+        console.log(prompt("당신의 이름이 무엇인가요~?"))
+        alert(prompt("당신의 이름이 무엇인가요~?")+"님 안녕하세요")
+    </script>
+</body>
+</html>
