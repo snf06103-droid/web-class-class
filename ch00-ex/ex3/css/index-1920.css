@@ -86,4 +86,7 @@
     .common-frame p strong{
         font-weight: 600;
     }
+    span{
+        color: #770000;
+    }
 }

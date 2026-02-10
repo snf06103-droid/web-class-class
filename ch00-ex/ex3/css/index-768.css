@@ -6,11 +6,13 @@
         margin: 0 1rem;
     }
     .cafe-gal {
-    flex-direction: column;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
     }
     .cafe-gal figure {
         aspect-ratio: 365/200;
-        height: 200px;
+        /* flex-basis: 100%; */
+        min-height: 0;
     }
     h2.deco-title {
     background: url(../img/deco.svg) no-repeat 50% -60px;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex</title>
+</head>
+<body>
+    <div>
+        <h2>문제</h2>
+        <p>사용자에게 이름, 국어점수, 영어점수, 수학점수, 사회점수를 각각 물어보고 평균값을 계산하여, 다음과 같이 홈페이지에 나타날 수 있도록 소스코드를 작성하세요 (p태그로 마크업이 될 수 있게 할 것)</p>
+        답안예시) [장윤서님의] 평균점수는 [92.33]점 입니다.
+    </div>
+
+    <script>
+        let name = prompt("당신의 이름이 뭔가요?")
+        let k = prompt("당신의 국어점수는 몇점인가요?")
+        let e = prompt("당신의 영어점수는 몇점인가요?")
+        let m = prompt("당신의 수학점수는 몇점인가요?")
+        let s = prompt("당신의 사회점수는 몇점인가요?")
+
+       console.log(Number(k))
+       console.log((Number(k)+Number(e)+Number(m)+Number(s))/4)
+       
+        let a = (Number(k)+Number(e)+Number(m)+Number(s))/4
+        
+        document.write("<p>["+name+"님의] 평균점수는 ["+a+"점] 입니다.</p>")
+        console.log(a.toFixed(2))
+        a = a.toFixed(2)
+        console.log(a)
+    </script>
+</body>
+</html>

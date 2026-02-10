@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수</title>
+</head>
+<body>
+    <h1>변수</h1>
+    <p>변할 가능성이 있는 수</p>
+    <script>
+        let a; //a라는 변수를 선언(생성)한다.
+        a = 10 //(값을 최초로 저장 하는 것)a라는 변수를 10으로 초기화 한다. 
+        console.log(a + 10)
+        console.log(a)
+        a=a+10 //대입 설정 저장 한다. (초기화라고 하지 않는다.)
+        console.log(a)
+        a+=10 //a에 10을 더한 값을 저장한다. -> a=a+10와 같은 말 외워라
+        console.log(a)
+
+        let b = 20; //b라는 변수를 생성함과 동시에 20으로 초기화 하는 값
+        b-=2 //b에 2를 뺀 값을 저장한다.
+        console.log(b)
+
+        let c = "안녕하세요"
+        //c[2] //"안녕하세요"[2]로 계산되고 그 후 "하"로 계산된다. 
+        //c[2]+c[4] //"하요"
+       // (c[2]+c[4]).length //2
+       // c.length //5
+        //console.log(Math.max((c[2]+c[4]).length,c.length))
+        console.log(c.length)
+        console.log(c[2])
+        //document.write("안녕!!") //바디태그에 안녕!!이라고 적은 것과 같은 표현 
+
+        let name = prompt("당신의 이름이 뭔가요?")
+        //prompt("당신의 이름이 뭔가요?")
+        document.write("<h3>"+name+"! 안녕!!<h3>")
+        //prompt(name+"님의 나이는 몇 살 인가요?" ) //이렇게 되면 2번 이름을 물어본다.중복된 것을 피하기 위해 변수를 사용한다. 
+        let age = prompt(name+"님의 나이는 몇 살 인가요?" ) 
+        document.write("<p>"+name+"님의 나이는 "+age+"살이군요. 반갑습니다.</p>")
+        
+
+    </script>
+
+    <h1>상수</h1>
+    <p>변하지 않는 수 </p>
+    <script>
+        123
+    </script>
+</body>
+</html>
