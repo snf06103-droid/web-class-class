@@ -52,7 +52,7 @@
         color: #770000;
     }
     body{
-        background: url(../img/BACKGROUND.png) no-repeat 50% 47% / contain;
+        background: url(../img/BACKGROUND.png) repeat-x 50% 47% / contain;
     }
     .cafe-gal{
         display: flex;

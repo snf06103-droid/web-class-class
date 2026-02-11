@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 종류</title>
+</head>
+<body>
+    <script>
+        let a = 100;
+        //let a = 200; 변수 2번 등록 -> 오류 난다. 
+
+        var b= 200; //let b = 200;와 같은 말
+        var b = 300; //b에 300이 저장됨 let과는 다른 점 덮어쓰기가 가능하기 때문에 누군가 등록했는지 모르고 등록하면 덮어씌워져서 오류가 난다. 전에 쓰던 기능이 먹통이 될 수 있다. 하지만 let은 등록되었으면 중복 등록이 불가능하기 때문에 여러명이 다른 파일로 작업 하였을 경우 let을 사용하는 편이 더 유리하다. 
+
+        const OWNER = "장윤서"; //수정할 때는 원본 파일에 저장된 값을 직접적으로 수정해야 한다. 피그마에서 컴포넌트같은 개념이다.
+    </script>
+</body>
+</html>

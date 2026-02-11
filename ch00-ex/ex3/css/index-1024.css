@@ -7,12 +7,10 @@
         margin: 0 2rem;
     }
     h2.deco-title {
-    font-size: 80px;
+        font-size: 80px;
+        background: url(../img/deco.svg) no-repeat 50% -24px;
     }
     .cafe-gal figure {
-    aspect-ratio: 467/434;
-    }
-    h2.deco-title {
-    background: url(../img/deco.svg) no-repeat 50% -24px;
+        aspect-ratio: 467/434;
     }
 }

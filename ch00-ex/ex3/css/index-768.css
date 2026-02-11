@@ -9,12 +9,14 @@
         flex-direction: column;
         /* flex-wrap: wrap; */
     }
-    .cafe-gal figure {
+    .cafe-gal figure{
         aspect-ratio: 365/200;
         /* flex-basis: 100%; */
         min-height: 0;
+        /* height: 100px; */
     }
     h2.deco-title {
-    background: url(../img/deco.svg) no-repeat 50% -60px;
+        font-size: 50px;
+        background: url(../img/deco.svg) no-repeat 50% -60px;
     }
 }
