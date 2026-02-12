@@ -1,0 +1,28 @@
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .common-frame h2 {
+        font-size: 80px;
+    }
+    .desc1 {
+        margin: 48px 0;
+    }
+    .gallery figure {
+        width: inherit;
+        height: inherit;
+        aspect-ratio: 1/1;
+        min-height: 0;
+    }
+    .type2{
+        margin-bottom: 316px;
+    }
+    .type2 figure{
+        aspect-ratio: 467/434;
+        min-height: 0;
+    }
+}
