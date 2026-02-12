@@ -1,6 +1,6 @@
 @media (max-width:1920px){
     html{
-        font-size: 20px;
+        font-size: var(--base-pc);
         font-family: 'Pretendard';
         font-weight: 400;
     }
