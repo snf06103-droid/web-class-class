@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼항연산자</title>
+</head>
+<body>
+    <script>
+        10>2 ? "A" : "b" //10>2가 조건부 이게 참이면 앞에 "A"가 남고 거짓이면 "b"가 최종으로 남게 된다. 
+        5<3 ? "가" : "나" //5<3이 거짓이므로 "나"가 남는다. 
+        10!=10 ? "다" : "라" //"라"가 최종으로 남겨짐
+        20 ? "C" : "D" //20은 참으로 간주되니깐 "C가 남겨짐"
+        !0 ? "E" : "F" //"E"
+        30<20 ? "A" : 5==5 ? "C" : "D"
+
+        let score = 40
+        score>=90 ? "A" : score>=80 ? "B" : score>=70 ? "C" : "D"
+
+    </script>
+</body>
+</html>

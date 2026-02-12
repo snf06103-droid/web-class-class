@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <script>
+        10>2 && 5>2 // 둘 다 참이여야 참으로 계산된다.하나라도 거짓이라면 거짓으로 계산된다.
+        5>1 && 5>2 && 5<3 // false
+        10>4 && 0 && 20 // false
+        0 && 10 && 20 && 30 //false
+        //10>4 && 0 && 20 + 0 && 10 && 20 && 30
+        let b = 10>4 && 0 && 20
+        console.log(b) //0으로 나온다 ... 왜? 왼쪽부터 계산되어지다가 거짓인 0에서 멈춘다. -> 0으로 계산
+
+        10<2 || 3!=3 || 4>2 // true
+        0 || !10 || !!20 //true
+        10 || "" || 20 // true
+        let a = 10 || "" || 20
+        console.log(a) // 10으로 나온다. ...왜? 앞에 바로 10이 나왔기 때문에 참으로 계산된다. 10에서 계산이 멈춰지고 10으로 계산된다. 
+
+    </script>
+</body>
+</html>

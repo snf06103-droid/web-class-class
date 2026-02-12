@@ -23,26 +23,28 @@
        console.log((Number(k)+Number(e)+Number(m)+Number(s))/4)
        
         let a = (Number(k)+Number(e)+Number(m)+Number(s))/4
+
+        let grade = a>=90 ? "1등급" : a>=80 ? "2등급" : a>=70 ? "3등급" : "4등급"
         
-        document.write("<p>["+name+"님의] 평균점수는 ["+a+"점] 입니다.</p>")
         console.log(a.toFixed(2))
         a = a.toFixed(2)
         console.log(a)
+        document.write(`<p>[${name}님의] 평균점수는 [${a}점] 입니다. [${grade}]입니다.</p>`)
 
 
 
 
+        // 쌤 답안
+        // let userName = prompt("당신의 이름이 뭔가요?")
+        // let scoreKo = Number(prompt("국어점수를 입력하세요"))
+        // let en = Number(prompt("영어점수를 입력하세요"))
+        // let mt = Number(prompt("수학점수를 입력하세요"))
+        // let sc = Number(prompt("사회점수를 입력하세요"))
 
-        let userName = prompt("당신의 이름이 뭔가요?")
-        let ko = Number(prompt("국어점수를 입력하세요"))
-        let en = Number(prompt("영어점수를 입력하세요"))
-        let mt = Number(prompt("수학점수를 입력하세요"))
-        let sc = Number(prompt("사회점수를 입력하세요"))
-
-        let sum = ko+en+mt+cs
-        let mean = (sum/4).toFixed(2)
+        // let sum = ko+en+mt+cs
+        // let mean = (sum/4).toFixed(2)
     
-        document.write(`<p>[&{userName}님의] 평균점수는 [&{mean}점] 입니다.</p>`)
+        // document.write(`<p>[&{userName}님의] 평균점수는 [&{mean}점] 입니다.</p>`)
 
     </script>
 </body>

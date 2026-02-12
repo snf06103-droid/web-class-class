@@ -18,21 +18,27 @@
             let userName = prompt("이름을 입력해주시오")
             let userWeight = Number(prompt("몸무게를 입력하시오"))
             let userHeight = Number(prompt("키를 입력하시오"))
-            let bmi = (userWeight / Math.pow(userHeight/100,2)
-            ).toFixed(2)
+            let bmi = (userWeight / Math.pow(userHeight/100,2)).toFixed(2)
+            let numberBmi = userWeight / Math.pow(userHeight/100,2)
+            let bmiState = numberBmi<=18.5 ? "저체중" : numberBmi<=23 ? "정상" : numberBmi<=25 ? "과체중" : "비만"
             document.write(`
-        
-            <dl class="bmi-dl">
-                <dt>이름</dt>
-                <dd>${userName}</dd>
-                <dt>체중</dt>
-                <dd>${userWeight}</dd>
-                <dt>키</dt>
-                <dd>${userHeight}</dd>
-                <dt>bmi</dt>
-                <dd>${+bmi}</dd>
-            </dl>
-        `)
+                <dl class="bmi-dl">
+                    <dt>이름</dt>
+                    <dd>${userName}</dd>
+                    <dt>체중</dt>
+                    <dd>${userWeight}</dd>
+                    <dt>키</dt>
+                    <dd>${userHeight}</dd>
+                    <dt>bmi</dt>
+                    <dd>${bmi}</dd>
+                    <dt>상태</dt>
+                    <dd>${bmiState}</dd>
+                    
+                </dl>
+            `)
+            // let ho = bmi<18.5 ? "저체중" : bmi<23 ? "정상" : bmi<25 ? "과체중" : "비만"
+
+            // document.write(`<p>${userName}님의 bmi지수는 ${ho} 범위 입니다.</p>`)
         </script>
 
         <div class="bmigrp">

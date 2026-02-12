@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+<body>
+    <h1>boolean - 참 거짓 데이터</h1>
+    <script>
+        10>2 //true 라고 계산됨
+        10<2 //false
+        10>=2 //true 10이 2보다 크거나 같다. 10이 2 이상이라는 말 이다.
+        10<=2 // false 10이 2보다 작거나 같다.
+        10==10 // true 10이 10과 같다. 값만 같은지 비교한다. 
+        10===10 //true 10이 10과 데이터 형태까지 모두 같다. (엄격한 비교할 때 사용됨)
+        10!=1 //true 10은 1과 같지 않다.
+        !(10>2) //false 
+        console.log(10>2)
+        console.log(!(10>2))
+
+        0 //0은 수가 없다는 뜻으로 간주된다.
+        //console.log(10<2)
+        ""//이것도 false로 간주된다.
+        let a // 변수에 아무 값도 들어있지 않으면 flase로 간주
+        undefind //false로 간주된다. 
+        null //false로 간주된다. 
+
+        12 //true로 간주된다.
+        -12 //true로 간주된다.
+        !-12 //false로 간주된다. 
+        !"" //true로 간주된다. 
+        !a //a라는 변수에 아무값도 저장 안되어있으로 거짓-> !가 붙어서 참으로 해석
+
+        let b = null //undefind와 의미가 다르다. 입주전 undefind / 입주 전 싹 대청소 null  
+
+    </script>
+</body>
+</html>
