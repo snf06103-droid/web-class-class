@@ -1,0 +1,78 @@
+:root{
+    --base-wide1:22px;
+    --base-pc:20px;
+    --base--pad:18px;
+    --base--mo:16px;
+}
+
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+}
+.common-frame{
+    width: 1440px;
+    margin: 3.75rem auto;
+    text-align: center;
+}
+.common-frame h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+.common-frame p{
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.common-frame .banner{
+    height: 441px;
+    background: url(../img/cafe.jpg) no-repeat 50% 50% / cover;
+    margin: 5rem 0;
+}
+.common-frame h2{
+    font-weight: 700;
+    font-size:1.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    margin-bottom: 1rem;
+}
+.common-frame ul li{
+    font-size: 1rem;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: .5rem;
+}
+
+@media (max-width:3840px){
+    html{
+        font-size: var(--base-wide1);
+    }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .common-frame{
+        width: auto;
+        margin: 75px 2rem;
+    }
+
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .common-frame {
+        margin: 75px 1rem;
+    }
+
+}

@@ -1,5 +1,10 @@
 :root{
+    --base-wide1:22px;
     --base-pc:20px;
     --base-pad:18px;
     --base-mo:14px;
+    
 }
+.stp1{
+        font-family: "아보";
+    }

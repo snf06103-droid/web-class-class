@@ -8,7 +8,7 @@
     }
     .common-frame h2 {
         font-size: 80px;
-    }
+    }  
     .desc1 {
         margin: 48px 0;
     }
@@ -22,5 +22,8 @@
     .type2 {
         padding-bottom: 316px;
         margin-bottom: 0;
+    }
+    .wrap{
+        background: url(../img/bg.png) no-repeat 50% 50% / 100% auto ;
     }
 }

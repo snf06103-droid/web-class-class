@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열</title>
+</head>
+<body>
+    <script>
+        let a = ["사과","배","수박","망고스틴"] //4개의 원소가 저장되어 있음
+        a[0] //a변수에 0번째 순서 원소를 불러온다.
+
+        console.log(a[0][1]) //과로 계산된다.
+        console.log(a[0]) //사과로 계산된다.
+        console.log(a[2]) //수박으로 계산된다. console.log(["사과","배","수박","망고스틴"][2]) 와 같은 말
+        console.log(a[4]) //undefind로 계산
+        "장윤서".length //배열 데이터 안의 글자가 각 원소가 된다. 3개의 원소로 이루어진 배열데이터 
+        a.length //원소가 4개이기 때문에 4로 계산됨
+        let b = [1,2,3,4][3] //b저장소에 4가 저장됨
+        // let b = [
+        //     1,
+        //     2,
+        //     3,
+        //     4
+        // ][3] 위와 같은 표현 주석처리해도 오류가 안나서 이렇게 자주 사용한다. 
+        a[b[3]] //undefind로 계산
+        a[b[3] ? 1:2] //배로 계산
+        a[b[3] ? 1:2].length //1로 계산
+
+        let c = [
+            "장윤서",
+            "이은지",
+            "김민지",
+            "김가희",
+            "최예슬"
+        ] //저장하는 순서가 매우 중요하다 0번째 원소는 장윤서다.
+        c[0] // "장윤서"
+        c[4] // "최예슬"
+        c[1].length //3
+        c[2][1]+c[3][2] //"선희"
+        (!c[3]||!c[4]||c[1])[0] //"이"
+
+        let d = 0||0||1 //true
+        console.log(d) //1
+
+        let person1 = ["장윤서","여자,","intj",156,48,false,["요리","여행","산책"]]//boolean 데이터 ,배열 데이터 사용 가능 
+        person1[0] //"장윤서"
+        person1[3] //156
+        person1[5] //false
+        person1[5]? "기혼" : "미혼"//미혼
+        person1[6][2] //"산책"
+        person1[6][2][1] //"책"
+
+    </script>
+</body>
+</html>
