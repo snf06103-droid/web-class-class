@@ -1,8 +1,8 @@
 :root{
-    --base-wide1:22px;
     --base-pc:20px;
-    --base--pad:18px;
-    --base--mo:16px;
+    --base-pad:18px;
+    --base-mo:14px;
+    --base-wide1:22px;
 }
 
 html{
@@ -36,7 +36,7 @@ html{
     font-size:1.5rem;
     line-height: 100%;
     text-transform: uppercase;
-    padding: .5rem 0;
+    padding: 10px 0;
     margin-bottom: 1rem;
 }
 .common-frame ul li{
@@ -44,7 +44,7 @@ html{
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-top: .5rem;
+    margin-top: 10px;
 }
 
 @media (max-width:3840px){
@@ -52,27 +52,29 @@ html{
         font-size: var(--base-wide1);
     }
 }
+
 @media (max-width:1920px){
     html{
         font-size: var(--base-pc);
     }
 }
+
 @media (max-width:1024px){
     html{
         font-size: var(--base-pad);
     }
     .common-frame{
         width: auto;
-        margin: 75px 2rem;
+        margin: 4.17rem 2rem;
     }
-
 }
+
 @media (max-width:768px){
     html{
         font-size: var(--base-mo);
     }
     .common-frame {
-        margin: 75px 1rem;
+        margin: 5.4rem 1rem;
     }
 
 }
