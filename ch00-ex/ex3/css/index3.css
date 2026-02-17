@@ -1,0 +1,134 @@
+:root{
+    --base-wide1: 22px;
+    --base-pc: 20px;
+    --bade-pad: 18px;
+    --base-mo: 14px;
+}
+
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+}
+.wrap{
+    background: url(../img/BACKGROUND.png) repeat-x 50% 51%;
+}
+.wrap .banner{
+    height: 599px;
+    background: url(../img/bg.png) no-repeat 50% 50% / cover;
+    border-radius: 0 0 150px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    color: #fff;
+    font-size: 50px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.common-frame{
+    width: 1600px;
+    margin: 0 auto 218px;
+    
+}
+.common-frame h2{
+    background: url(../img/deco.svg) no-repeat 50% 0% ;
+    padding-top: 10rem;
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.common-frame .desc1{
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+span{
+    color: #770000;
+}
+.cafe-gal{
+    display: flex;
+    
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+.cafe-gal figure{
+    flex: 1;
+    aspect-ratio: 790/434;
+    /* width: 100%; */
+    line-height: 0;
+}
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.common-frame h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.common-frame .desc2,.desc3{
+    line-height: 140%;
+    text-transform: lowercase;
+}
+.common-frame .desc2{
+    margin-bottom: .5rem;
+}
+b{
+    font-weight: 700;
+}
+
+@media(max-width:3840px){
+    html{
+        font-size: var(--base-wide1);
+    }
+}
+@media(max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media(max-width:1024px){
+    html{
+        font-size: var(--bade-pad);
+    }
+    .common-frame h2 {
+        background: url(../img/deco.svg) no-repeat 50% -30px;
+        font-size: 4.4rem;
+    }
+    .cafe-gal figure {
+        aspect-ratio: 467/434;
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 2rem 218px;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .wrap {
+        background: url(../img/BACKGROUND.png) repeat-x 50% 82%;
+    }
+    .common-frame h2 {
+        background: url(../img/deco.svg) no-repeat 50% -95px;
+        font-size: 3.6rem;
+    }
+    .common-frame {
+        margin: 0 1rem 218px;
+    }
+    .cafe-gal {
+        flex-direction: column;
+    }
+    .cafe-gal figure {
+        aspect-ratio: 365/200;
+        min-height: 0;
+    }
+}

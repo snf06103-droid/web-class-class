@@ -1,0 +1,98 @@
+:root{
+    --base-wide1: 22px;
+    --base-pc: 20px;
+    --base-pad : 18px;
+    --base-mo : 14px;
+}
+
+html{
+    font-family: 'Pretendard',sans-serif;
+    font-weight: 400;
+}
+.wrap{
+    background: url(../img/bg.png) no-repeat 50% 0% / cover;
+}
+.common-frame{
+    width: 1600px;
+    margin: 6rem auto;
+}
+.common-frame .banner{
+    height: 599px;
+    background: url(../img/back.jpg) no-repeat 50% 50% / cover;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.banner h1{
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.common-frame h2{
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+.common-frame .desc1{
+    margin: 2.4rem 0;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.cafe-gal{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.cafe-gal figure{
+    flex: 1;
+    aspect-ratio: 520/434;
+    line-height: 0;
+}
+.cafe-gal figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.common-frame h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.common-frame .desc2{
+    line-height: 140%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.common-frame .type-2 figure{
+    aspect-ratio: 790/434;
+}
+
+
+
+@media (max-width:3840px){
+    html{
+        font-size: var(--base-wide1);
+    }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc)
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad)
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo)
+    }
+}
