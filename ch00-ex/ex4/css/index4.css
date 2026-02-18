@@ -37,7 +37,7 @@ html{
     text-transform: uppercase;
 }
 .common-frame .desc1{
-    margin: 2.4rem 0;
+    margin: 48px 0;
     line-height: 140%;
     text-transform: uppercase;
 }
@@ -90,9 +90,46 @@ html{
     html{
         font-size: var(--base-pad)
     }
+    .common-frame {
+        width: auto;
+        margin: 6rem 2rem;
+    }
+    .common-frame h2 {
+        font-size: 4.4rem;
+    }
+    .cafe-gal figure {
+        aspect-ratio: 1/1;
+    }
+    .common-frame .type-2 figure {
+        aspect-ratio: 467/434;
+    }
 }
 @media (max-width:768px){
     html{
         font-size: var(--base-mo)
+    }
+    .common-frame {
+        margin: 6rem 1rem;
+    }
+    .common-frame h2 {
+        font-size: 3.6rem;
+    }
+    .common-frame .type-1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .cafe-gal figure {
+        aspect-ratio: 175/150;
+    }
+    .type-1 .po{
+        grid-column: 1/3;
+        aspect-ratio: 365/150;
+    }
+    .type-2{
+        flex-direction: column;
+    }
+    .common-frame .type-2 figure {
+        aspect-ratio: 365/150;
+        height: 100%;
     }
 }

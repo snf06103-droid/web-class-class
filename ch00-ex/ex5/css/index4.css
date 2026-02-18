@@ -1,0 +1,148 @@
+:root{
+    --base-wide1:22px;
+    --base-pc:20px;
+    --base-pad:18px;
+    --base-mo:14px;
+}
+
+
+html{
+    font-weight: 400;
+    font-family: 'Pretendard',sans-serif;
+}
+.wrap{
+    margin-bottom: 6rem;
+}
+.wrap h1{
+    padding-top: 8rem;
+    font-size: 2.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.wrap .desc1{
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+.wrap .banner{
+    background: url(../img/background.jpg) no-repeat 50% 50% / cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 5rem;
+}
+.banner h2{
+    color: #fff;
+    width: 1600px;
+    font-size: 7.5rem;
+    line-height: 90%;
+    text-transform: uppercase;
+}
+.container{
+    width: 1604px;
+    margin: 0 auto;
+}
+.container h3{
+    font-size: 2rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.container .desc2{
+    line-height: 140%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.container ul{
+    display: flex;
+    gap: 1rem;
+}
+ul li{
+    flex: 1;
+    aspect-ratio: 1/1;
+}
+li figure{
+    line-height: 0;
+    aspect-ratio: 1/1;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+li h4{
+    font-weight: 700;
+    line-height: 140%;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+}
+li p{
+    line-height: 140%;
+}
+li .desc3{
+    word-break: break-all;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media(max-width:3840px){
+    html{
+        font-size: var(--base-wide1);
+    }
+}
+@media (max-width:1920px){
+    html{
+        font-size: var(--base-pc);
+    }
+}
+@media (max-width:1024px){
+    html{
+        font-size: var(--base-pad);
+    }
+    .container{
+        width: auto;
+        margin: 0 2rem;
+    }
+    .wrap .banner{
+        height: 600px;
+    }
+    .banner h2 {
+        width: 952px;
+        font-size: 4.4rem;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--base-mo);
+    }
+    .container{
+        width: auto;
+        margin: 0 1rem;
+    }
+    .wrap .banner {
+        height: 500px;
+    }
+    .wrap .banner {
+        align-items: center;
+    }
+    .banner h2 {
+        width: 365px;
+        font-size: 3.6rem;
+        text-align: center;
+    }
+    .container ul {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
