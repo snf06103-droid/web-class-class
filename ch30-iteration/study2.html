@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문의 중첩</title>
+    <link rel="stylesheet" href="./css/study2.css">
+</head>
+<body>
+    <script>
+        for( let i=0 ; i<2 ; i++){
+            for( let j=0 ; j<3 ; j++){
+                document.write(`<p>i의값:${i} / j의값:${j}</p>`)
+            }
+        } //3중첩까지는 안쓴다.
+    </script>
+    <h1>구구단 2단부터 9단까지 뽑기</h1>
+
+    <!-- <ul>
+        <script>
+            for(let b=1 ; b<10 ; b++){
+            document.write(<li>2*${b}=${2*b}</li>)
+            }
+        </script>
+    </ul> -->
+
+    <!-- <ul>
+    <script>
+        for(let a=2 ; a<10 ; a++){
+            for( let b=1 ; b<10 ; b++){
+                document.write(`<li>${a}*${b}=${a*b}</li>`)
+            }
+        }
+    </script> -->
+
+    
+    <script>
+        let colums=prompt("구구단 열을 입력하세요") 
+        console.log(colums)
+        document.write(`<div class="box" style="grid-template-columns: repeat(${colums},1fr);">`)
+        for( let dan=2 ; dan<=9 ; dan++){
+            document.write("<ul>")
+                for( let b=1 ; b<10 ; b++){
+                document.write(`<li>${dan}*${b}=${dan*b}</li>`)
+                }
+            document.write("</ul>")
+        }
+        document.write("</ul>")
+    </script>
+    </div>
+</body>
+</html>

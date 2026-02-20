@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문-for</title>
+</head>
+<body>
+    <h1>반복문</h1>
+    <p>조건이 참으로 계산되는 동안 소스코드를 반복하는 문법구조</p>
+    <script>
+       // for(조건){반복될소스코드}
+       //사용자에게 원하는 구구단수를 입력하게 한 후 
+       //구구단이 출력될 수 있도록 소스코드를 바꿔보시오
+       let dan = Number(prompt("구구단수를 입력하세요"))
+        for(let i=1 ; i<10 ; i++){
+            //console.log(i)
+            document.write(`<li>${dan}* ${i}=${dan*i}</li>`)
+        } //i라는 변수는 반복문 안에서 사용되는 변수로 등록된다. 
+
+        let myclass = ["장윤서","이은지","김민지","조성현"]
+        
+    </script>
+    <ul>
+        <script>
+            for(let i=0 ; i<myclass.length ; i++){
+                document.write(`<li>${myclass[i]}</li>`)
+            }
+        </script>
+    </ul>
+</body>
+</html>
