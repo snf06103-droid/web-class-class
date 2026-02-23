@@ -85,5 +85,11 @@ header .common-frame{
     html{
         font-size: var(--base-mo);
     }
+    .banner h1 {
+        font-size: 50px;
+    }
+    .common-frame .gnb{
+        display: none;
+    }
 }
 
