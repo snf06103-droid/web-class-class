@@ -10,7 +10,6 @@ html{
     font-family: 'Pretendard',sans-serif;
 }
 .common-frame{
-    border: 1px solid red;
     width: 1600px;
     margin: 0 auto;
 }
@@ -25,7 +24,6 @@ header .common-frame{
     display: flex;
 }
 .gnb li{
-    border: 1px solid red;
 }
 .gnb>li>a{
     display: flex;
@@ -36,7 +34,21 @@ header .common-frame{
     font-weight: 600;
     line-height: 100%;
     text-transform: uppercase;
+}
+.banner{
+    height: 700px;
+    background: url(../img/bg.jpg) no-repeat 50% 50% /cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
+.banner h1{
+    font-size: 7.5rem;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 
 
 @media (max-width:3840px){
@@ -53,10 +65,26 @@ header .common-frame{
     html{
         font-size: var(--base-pad);
     }
+    .common-frame{
+        width: auto;
+        margin: 0 2rem;
+    }
+    .common-frame .logo img{
+        height: 90px;
+        object-fit: cover;
+    }
+    .banner{
+        height: 600px;
+        margin-bottom: 6.1rem;
+    }
+    .banner h1 {
+        font-size: 4.4rem;
+    }
 }
 @media (max-width:768px){
     html{
         font-size: var(--base-mo);
     }
+
 }
 

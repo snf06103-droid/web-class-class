@@ -35,6 +35,7 @@ html{
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 5rem;
+    /* width: 100vw; */
 }
 .banner h2{
     color: #fff;
@@ -110,6 +111,12 @@ li .desc3{
 @media (max-width:1920px){
     html{
         font-size: var(--base-pc);
+    }
+}
+@media (max-width:1600px){
+    .container{
+        width: auto;
+        margin: 0 2rem;
     }
 }
 @media (max-width:1024px){
