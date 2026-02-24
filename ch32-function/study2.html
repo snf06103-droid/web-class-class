@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 리턴</title>
+</head>
+<body>
+    <h1>함수 안에서 return 표현</h1>
+    <p>함수에서 return이라는 키워드를 만나면 그 즉시 함수는 종료되며, return키워드 오른쪽의 값을 함수가 사용되었던 자리에 남긴다.</p>
+    <script>
+        function a(){
+            document.write("<h1>안녕하세요</h1>")
+            return "좋은아침"
+        }
+        //a()//"좋은아침"이라는 데이터가 남는다.
+        let b = a()
+        //alert(b) //"좋은아침"
+
+        function c(){
+            document.write("<p>c함수가 실행되었습니다.</p>")
+            return 1
+        }
+
+        function d(){
+            document.write("<p>d함수가 실행되었습니다.</p>")
+            return 4
+        }
+        c()+d() //c와d를 실행을 했다 -> c를 실행한 결과에 d를 실행한 결과를 더한다는 말 ()는 실행한다고 해석할 것! 혼자 계산하고 끝냈기 때문에 5가 보여지지는 않는다.
+        //alert(c()+d()) //이래야 5가 알림창에 뜬다.
+
+        function e(n1,n2){
+            return n1+n2
+        }
+        e(1,2)//3
+        //alert(e(e(1,2),4))//7
+
+        function f(word){
+            document.write("<p>나는  "+word+"이 될거야.</p>")
+            return word
+        }
+        f("슈퍼맨")? "그래 그렇게 해라" : "안돼" //그래그렇게 해라 라고 남음 
+
+        function g(person){
+            document.write(`${person[0]}씨의 직업은 ${person[1]}이고 ${person[2]}세 시군요.`)
+            return person
+        }
+        g(["장윤서","학생",27])[1]//"학생"
+        g(["장윤서","학생",27])[1].length//2
+
+        function h(person){
+            document.write(`${person[0]}씨의 직업은 ${person[1]}이고 ${person[2]}세 시군요.`)
+            return {age:person[2],name:person[0],job:erson[1]}
+        }
+        // h(["장윤서","학생",27])//h함수는 인자를 배열형태로 받아서 객체 형태로 리턴해주는 함수 
+        // h(["장윤서","학생",27]).age//29 
+        // h(["장윤서","학생",27]).name//"이은지" 
+        // h(["장윤서","학생",27]).job//"학생" 
+
+        function getAver(arr){
+            //평균값을 계산해서 리턴하는 함수
+            //들어오는 데이터가 배열이라고 가정
+            return((arr[0]+arr[1]+arr[2])/3).toFixed(3)
+        }
+        getAver([1,2,3])
+
+        function getAver2(arr,sosu){
+            let sum = 0
+            for(let i=0 ; i<arr.length ; i++){
+                sum += arr[i]
+            }
+            return (sum / arr.length).toFixed(sosu)
+        }
+        getAver2([1,2,3],3)
+        alert(getAver2([1,2,3],3))
+    </script>
+</body>
+</html>

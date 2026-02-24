@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>값의 형태로 정의하는 함수</title>
+</head>
+<body>
+    <script>
+        function a(){
+            alert("aaa");
+        }
+        a()
+        let b = function(){
+            alert("bbb");
+        }//익명함수라고 함
+        b() //bbb
+
+        // let c = function(){
+        //     alert("ccc");
+        // }
+        let c = ()=>{
+            alert("ccc")
+        } //화살표 함수라고 함 위와 같은 뜻이다.
+        c()
+
+        function d(n1){
+            alert(n1)
+        }
+        d("ddd")//ddd
+
+        let e = function(n1){
+            alert(n1)
+        }
+        e("eee")
+
+        let f = n1=>{
+            alert(n1)
+        }//매개변수가 하나일 때는 ()생략 가능
+        f("fff")
+
+        let g = (a,b)=>a+b//함수의 실행문이 하나일 때는 {}생략 가능
+        alert(g(1,3))//4
+
+        let h = (a,b)=>[a,b]//배열을 반환하는 화살표 함수
+        alert(h(1,2))//[1,2]
+
+    </script>
+    <h1>콜백함수</h1>
+    <script>
+        function aa(bb){
+            bb()
+        }
+        aa(function(){
+            alert("bb")
+        })//익명함수를 매개변수로 전달하는 형태의 함수 
+        let cc=dd=>{
+            dd()
+        }
+        cc(()=>{
+            alert("dd")
+        })//function을 화살표 함수로 바꾼 형태의 콜백함수
+
+    </script>
+</body>
+</html>
