@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 메서드 표현</title>
+</head>
+<body>
+    <script>
+        let ac = {
+            bodycolor:"흰색",
+            width:60,
+            height:200,
+            weight:70,
+            brand:"carrier",
+            powerOn: function(){
+                alert("에어컨이 켜졋습니다.")
+            },
+            powerOff: function(){
+                alert("에어컨이 꺼졋습니다.")
+            },
+            temperature:25,
+            temperatureUp: function(){
+                alert("온도가 1도 올라갑니다.")
+                this.temperature++//this는 객체 자신을 가리키는 키워드
+            },
+            temperatureDown: function(){
+                alert("온도가 1도 내려갑니다.")
+                this.temperature--
+            },
+        }
+        ac["bodycolor"]
+        ac.bodycolor
+        ac.weight
+        ac.powerOn()
+        ac.powerOff()
+        alert(ac.temperature)
+        ac.temperatureUp()
+        alert(ac.temperature)
+        ac.temperatureDown()
+        alert(ac.temperature)
+        
+    </script>
+</body>
+</html>
