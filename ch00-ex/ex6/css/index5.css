@@ -1,4 +1,5 @@
 :root{
+    --base-wide2:24px;
     --base-wide1:22px;
     --base-pc:20px;
     --base-pad:18px;
@@ -8,6 +9,9 @@
 html{
     font-weight: 400;
     font-family: 'Pretendard',sans-serif;
+}
+headermobile{
+    display: none;
 }
 .common-frame{
     width: 1600px;
@@ -51,6 +55,11 @@ header .common-frame{
 
 
 
+@media (max-width:5120px){
+    html{
+        font-size: var(--base-wide2);
+    }
+}
 @media (max-width:3840px){
     html{
         font-size: var(--base-wide1);
@@ -59,6 +68,12 @@ header .common-frame{
 @media (max-width:1920px){
     html{
         font-size: var(--base-pc);
+    }
+}
+@media (max-width:1600px){
+    .common-frame{
+        width: auto;
+        margin: 0 2rem;
     }
 }
 @media (max-width:1024px){
@@ -81,15 +96,39 @@ header .common-frame{
         font-size: 4.4rem;
     }
 }
+@media (max-width:900px){
+    header{
+        display: none;
+    }
+    headermobile{
+        display: block;
+    }
+    headermobile .common-frame{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 @media (max-width:768px){
     html{
         font-size: var(--base-mo);
     }
+    .common-frame{
+        width: auto;
+        margin: 0 1rem;
+    }
     .banner h1 {
         font-size: 50px;
     }
-    .common-frame .gnb{
+    /* .common-frame .gnb{
         display: none;
+    } */
+    .common-frame .logo img{
+        height: 70px;
     }
+    banner{
+        margin-bottom: 230px;
+    }
+    
 }
 

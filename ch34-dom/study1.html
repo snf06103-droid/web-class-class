@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서객체 - Document Object Model</title>
+</head>
+<body>
+    <h1>자바스크립트의 객체 시스템</h1>
+    <p>자바스크립트는 브라우저 자체를 객체로 이해하고 있으며 최상위 객체를 window 객체라고 부른다.</p>
+    <p>그리고 그 최상위 객체 window 아래에는 여러 객체들이 포함되어 있다.</p>
+    <ul>
+        <li>document -> 정보들을 표현하는 문서객체</li> html 파일 그자체가 도큐먼트 객체이다.
+        <li>location -> 웹페이지의 위치 정보를 표현하는 객체</li>
+        <li>history -> 이동했던 페이지들에 대한 정보를 관리하는 객체</li>
+        <li>console -> 개발자 툴에 있는 콘솔 객체 오류를 찾아주는 역할을 한다.</li>
+        <li>navigator -> 브라우저 정보를 담고 있는 객체</li>
+    </ul>
+    <!-- 태그들 전부를 각각의 문서객체로 이해한다.그걸 통 틀어서 도큐먼트 객체라고 부른다. -->
+    <!-- 히스토리 객체 덕분에 여러번 사이트 방문해도 다운이 한번만 된다. -->
+     <script>
+        console.log(window)//window는 ""를 쓰지 않아도 된다. window 객체는 브라우저의 최상위 객체이다. 모든 객체는 window 객체의 자식 객체이다.;
+        //window.alert("안녕하세요")//window 객체의 alert 메서드 호출 alert()는 축약표현이다.
+        //window.location.href = "https://www.naver.com"//location 객체의 href 프로퍼티에 네이버 주소를 할당하면 네이버로 이동한다.
+        //location.href = "https://www.naver.com"//window 객체는 생략할 수 있다.
+        //location.reload()//location 객체의 reload 메서드 호출 현재 페이지를 새로고침한다.
+        history.back()//history 객체의 back 메서드 호출 이전 페이지로 이동한다.
+        history.go(-1)
+        
+     </script>
+</body>
+</html>
