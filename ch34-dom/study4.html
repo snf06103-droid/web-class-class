@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 </title>
+    <link rel="stylesheet" href="css/study4.css">
+</head>
+<body>
+    <aside class="font-controler">
+        <ul>
+            <li id="view-font-size"><span class="chip">20px</span></li>
+            <li id="btn-small-font" class="button-type">글씨 -</li>
+            <li id="btn-large-font" class="button-type">글씨 +</li>
+            <li id="btn-default-font" class="button-type">기본크기</li>
+        </ul>
+    </aside>
+
+    <h1>태그에 이벤트 등록하기</h1>
+    <p>자바스크립트로 태그를 선택하여 이벤트를 등록할 수 있다.</p>
+    <span id="btn1" class="button-type">인사시키기</span>
+    <span id="btn2" class="button-type">배경색 넣기</span>
+    <span id="btn3" class="button-type">배경색 지우기</span>
+    
+
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus commodi ad porro dicta aliquam mollitia praesentium fugit similique quae, vero reprehenderit dolores illum sed dolore architecto sapiente debitis numquam.
+    </div>
+
+    <script>
+        document.querySelector("#btn1")
+        const btn1 = document.querySelector("#btn1");
+        btn1.addEventListener("click",function(){
+            alert("안녕하세요")
+        })
+
+        document.querySelector("#btn2")
+        const btn2 = document.querySelector("#btn2");
+
+        const box = document.querySelector(".box")
+        btn2.addEventListener("click",function(){
+            box.style.backgroundColor = "skyblue"
+        })
+
+        document.querySelector("#btn3")
+        const btn3 = document.querySelector("#btn3");
+
+        btn3.addEventListener("click",function(){
+            box.style.backgroundColor = "transparent"
+        })
+
+        let basicFontSize = 20;
+        let minfontSize = 14;
+        let maxfontSize = 26;
+        const chip = document.querySelector(".chip")
+
+        const btnSmallFont = document.querySelector("#btn-small-font");
+        const btnLargeFont = document.querySelector("#btn-large-font");
+        const btnDefaultFont = document.querySelector("#btn-default-font");
+        const html = document.querySelector("html")
+
+        btnSmallFont.addEventListener("click", function(){
+            if(basicFontSize<=minfontSize){
+                alert(minfontSize+"픽셀보다 작게 글씨를 줄일 수 없습니다.")
+                return
+            }
+            basicFontSize -= 1
+            chip.innerHTML = `${basicFontSize}px`
+            html.style.fontSize = `${basicFontSize}px`
+        })
+        btnLargeFont.addEventListener("click",function(){
+            if(basicFontSize>=maxfontSize){
+                alert(maxfontSize+"픽셀보다 크게 글씨를 키울 수 없습니다.")
+                return
+            }
+            basicFontSize += 1
+            chip.innerHTML = `${basicFontSize}px`
+            html.style.fontSize = `${basicFontSize}px`
+        })
+        btnDefaultFont.addEventListener("click",function(){
+            basicFontSize = 20
+            html.style.fontSize = `${basicFontSize}px`
+        })
+    </script>
+    
+</body>
+</html>

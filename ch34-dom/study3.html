@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom의 메서드와 프로퍼티</title>
+</head>
+<body>
+    <h1>태그의 속성 편집하기</h1>
+    <p>태그가 갖고있는 속성 값을 설정하거나 가져올 수 있다.</p>
+    <figure>
+        <img class="img1" src="./img/강건희.png" alt="강건희">
+        <figcaption class="cap1">강건희</figcaption>
+    </figure>
+    <script>
+        //태그를 선택
+        let img1 = document.querySelector(".img1") //document.querySelector를 입력하면 객체데이터 형태로 변환된다.
+        // {tagname: "img", src: "./img/강건희.png", alt: "강건희", class: "img1", getAttribute: function(){}...}
+        console.dir(img1)//img1의 객체데이터 형태를 콘솔창에 출력한다. -> img 태그의 속성값과 메서드가 보인다.
+        img1.getAttribute("src") //img1의 src 속성값을 가져온다. -> "./img/강건희.png" 이 리턴 된다.
+        let originalSrc = img1.getAttribute("src") //img1의 src 속성값을 originalSrc 변수에 저장한다.
+        console.log(originalSrc) // "./img/강건희.png" 이 출력된다.
+        typeof (originalSrc) //originalSrc 변수의 데이터 타입을 확인한다. ->"string" 이 리턴 된다.
+        let originalAlt = img1.getAttribute("alt") //img1의 alt 속성값을 originalAlt 변수에 저장한다.
+        console.log(originalAlt) // "강건희" 이 출력된다.
+
+        document.querySelector(".cap1")
+        let cap1 = document.querySelector(".cap1") //figcaption 태그를 선택하여 cap1 변수에 저장한다.
+        console.log(cap1.textContent)//cap1의 텍스트 내용을 콘솔창에 출력한다. -> "강건희" 이 출력된다.
+        cap1.textContent = "우하하" //cap1의 텍스트 내용을 "우하하"로 변경한다. -> figcaption 태그의 텍스트가 "우하하"로 바뀐다. "우하하"-> "<i>우하하</i>로 변경한다. -> figcaption 태그의 텍스트가 "<i>우하하</i>"로 바뀐다. -> figcaption 태그의 텍스트가 "우하하"로 바뀐다. 태그를 넣고 싶다면 textContent 대신 innerHTML을 사용해야 한다.
+        cap1.innerHTML = "<i>우하하</i>" //cap1의 HTML 내용을 "<i>우하하</i>"로 변경한다. -> figcaption 태그의 텍스트가 "우하하"로 바뀐다. 
+    </script>
+
+    <h1>태그의 클래스 제어 </h1>
+    <p>선택된 태그의 클래스를 추가하더나 삭제할 수 있다.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas autem voluptates, soluta porro sequi inventore ipsum unde a? Optio nulla, adipisci ullam earum velit aliquid expedita impedit modi autem sed.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas autem voluptates, soluta porro sequi inventore ipsum unde a? Optio nulla, adipisci ullam earum velit aliquid expedita impedit modi autem sed.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas autem voluptates, soluta porro sequi inventore ipsum unde a? Optio nulla, adipisci ullam earum velit aliquid expedita impedit modi autem sed.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas autem voluptates, soluta porro sequi inventore ipsum unde a? Optio nulla, adipisci ullam earum velit aliquid expedita impedit modi autem sed.</p>
+    <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas autem voluptates, soluta porro sequi inventore ipsum unde a? Optio nulla, adipisci ullam earum velit aliquid expedita impedit modi autem sed.</p>
+    <script>
+        //let para = document.querySelector(".para") //p 태그를 선택한다.
+        //para.classList.add("on") //para 태그에 "on" 클래스를 추가한다. -> p 태그의 class 속성값이 "para on"으로 변경된다.
+        //para.classList.remove("on") //para 태그에서 "on" 클래스를 제거한다. -> p 태그의 class 속성값이 "para"로 변경된다.
+        document.querySelectorAll(".para") //모든 p 태그를 선택한다. -> NodeList(5) [p.para, p.para, p.para, p.para, p.para] 이 리턴 된다.
+        let paras = document.querySelectorAll(".para") //모든 p 태그를 선택하여 paras 변수에 저장한다.
+        paras.forEach(tag=>{
+            tag.classList.add("on") //paras 변수에 저장된 모든 p 태그에 "on" 클래스를 추가한다. -> 모든 p 태그의 class 속성값이 "para on"으로 변경된다.
+        })
+    </script>
+
+    <h1>태그의 포함관계를 사용하여 태그 선택하기</h1>
+    <ul class="list">
+        <li>1</li>
+        <li class="me">2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        let ultag = document.querySelector(".list")
+        let litags = ultag.children//ultag의 자식 태그들을 선택한다. -> HTMLCollection(4) [li, li.me, li, li] 이 리턴 된다.
+        litags[3].style.color = "red" //litags의 3번째 태그의 글자 색상을 빨간색으로 변경한다. -> 4라는 글자의 색상이 빨간색으로 바뀐다.
+        let me = document.querySelector(".me") //class가 "me"인 태그를 선택하여 me 변수에 저장한다.
+        me.parentElement.style.border = "2px solid blue" //me 태그의 부모 태그에 테두리를 추가한다.
+        me.parentElement.parentElement.style.border = "2px solid green" //li 태그의 부모 태그의 부모 태그에 테두리를 추가한다. -> body 태그에 테두리를 추가한다.
+        me.nextElementSibling.style.color = "orange" //me 태그의 다음 형제 태그의 글자 색상을 주황색으로 변경한다. -> 3이라는 글자의 색상이 주황색으로 바뀐다.
+        me.previousElementSibling.style.color = "purple" //me 태그의 이전 형제 태그의 글자 색상을 보라색으로 변경한다. -> 1이라는 글자의 색상이 보라색으로 바뀐다.
+        me.parentElement.parentElement.children[1].style.backgroundColor = "yellow" //body 태그의 자식 태그 중 1번째 태그의 배경색을 노란색으로 변경한다. -> h1 태그의 배경색이 노란색으로 바뀐다.
+        me.parentElement.parentElement.children[0].textContent[0] //왼쪽부터 계산하면 된다. body 태그의 자식 태그 중 0번째 태그의 텍스트 내용의 0번째 글자를 가져온다. -> "태" 이 리턴 된다.
+
+    </script>
+
+
+
+</body>
+</html>
