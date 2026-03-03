@@ -5,6 +5,9 @@
     --base-pad:18px;
     --base-mo:14px
 }
+.hiddenGnb{
+    display: none;
+}
 
 html{
     font-weight: 400;
@@ -108,6 +111,39 @@ header .common-frame{
         justify-content: space-between;
         align-items: center;
     }
+    .hiddenGnb{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transform: translateX(100%);
+        z-index: 1000;
+        transition: all .5s ease 0s;
+    }
+    .hiddenGnb.on{
+        transform: translate(0%);
+    }
+    .hdTop{
+        border-bottom: 1px solid #000;
+    }
+    .hdTop .common-frame{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hdBot{
+        margin-top: 1rem;
+    }
+    .hdBot ul li{
+        padding: 1rem 0;
+        font-weight: 600;
+        line-height: 100%;
+        text-transform: uppercase;
+        border-bottom: 1px solid #00000017
+    } 
 }
 @media (max-width:768px){
     html{

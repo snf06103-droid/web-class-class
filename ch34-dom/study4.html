@@ -12,7 +12,7 @@
             <li id="view-font-size"><span class="chip">20px</span></li>
             <li id="btn-small-font" class="button-type">글씨 -</li>
             <li id="btn-large-font" class="button-type">글씨 +</li>
-            <li id="btn-default-font" class="button-type">기본크기</li>
+            <li id="btn-font-base" class="button-type">기본크기</li>
         </ul>
     </aside>
 
@@ -26,62 +26,6 @@
     <div class="box">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatibus commodi ad porro dicta aliquam mollitia praesentium fugit similique quae, vero reprehenderit dolores illum sed dolore architecto sapiente debitis numquam.
     </div>
-
-    <script>
-        document.querySelector("#btn1")
-        const btn1 = document.querySelector("#btn1");
-        btn1.addEventListener("click",function(){
-            alert("안녕하세요")
-        })
-
-        document.querySelector("#btn2")
-        const btn2 = document.querySelector("#btn2");
-
-        const box = document.querySelector(".box")
-        btn2.addEventListener("click",function(){
-            box.style.backgroundColor = "skyblue"
-        })
-
-        document.querySelector("#btn3")
-        const btn3 = document.querySelector("#btn3");
-
-        btn3.addEventListener("click",function(){
-            box.style.backgroundColor = "transparent"
-        })
-
-        let basicFontSize = 20;
-        let minfontSize = 14;
-        let maxfontSize = 26;
-        const chip = document.querySelector(".chip")
-
-        const btnSmallFont = document.querySelector("#btn-small-font");
-        const btnLargeFont = document.querySelector("#btn-large-font");
-        const btnDefaultFont = document.querySelector("#btn-default-font");
-        const html = document.querySelector("html")
-
-        btnSmallFont.addEventListener("click", function(){
-            if(basicFontSize<=minfontSize){
-                alert(minfontSize+"픽셀보다 작게 글씨를 줄일 수 없습니다.")
-                return
-            }
-            basicFontSize -= 1
-            chip.innerHTML = `${basicFontSize}px`
-            html.style.fontSize = `${basicFontSize}px`
-        })
-        btnLargeFont.addEventListener("click",function(){
-            if(basicFontSize>=maxfontSize){
-                alert(maxfontSize+"픽셀보다 크게 글씨를 키울 수 없습니다.")
-                return
-            }
-            basicFontSize += 1
-            chip.innerHTML = `${basicFontSize}px`
-            html.style.fontSize = `${basicFontSize}px`
-        })
-        btnDefaultFont.addEventListener("click",function(){
-            basicFontSize = 20
-            html.style.fontSize = `${basicFontSize}px`
-        })
-    </script>
-    
+    <script src="js/study4.js"></script>
 </body>
 </html>

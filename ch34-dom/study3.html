@@ -27,7 +27,7 @@
         document.querySelector(".cap1")
         let cap1 = document.querySelector(".cap1") //figcaption 태그를 선택하여 cap1 변수에 저장한다.
         console.log(cap1.textContent)//cap1의 텍스트 내용을 콘솔창에 출력한다. -> "강건희" 이 출력된다.
-        cap1.textContent = "우하하" //cap1의 텍스트 내용을 "우하하"로 변경한다. -> figcaption 태그의 텍스트가 "우하하"로 바뀐다. "우하하"-> "<i>우하하</i>로 변경한다. -> figcaption 태그의 텍스트가 "<i>우하하</i>"로 바뀐다. -> figcaption 태그의 텍스트가 "우하하"로 바뀐다. 태그를 넣고 싶다면 textContent 대신 innerHTML을 사용해야 한다.
+        cap1.textContent = "우하하" //cap1의 텍스트 내용을 "우하하"로 변경한다. -> figcaption 태그의 텍스트가 "우하하"로 바뀐다. "우하하"-> "<i>우하하</i>로 변경한다. -> figcaption 태그의 텍스트가 "<i>우하하</i>"로 바뀐다. 태그를 넣고 싶다면 textContent 대신 innerHTML을 사용해야 한다.
         cap1.innerHTML = "<i>우하하</i>" //cap1의 HTML 내용을 "<i>우하하</i>"로 변경한다. -> figcaption 태그의 텍스트가 "우하하"로 바뀐다. 
     </script>
 
