@@ -1,0 +1,45 @@
+*{margin: 0; padding: 0;}
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+}
+.popup{
+    position: fixed;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+.popup img{
+    width: 100%;
+}
+.content-popup{
+    padding: 2rem;
+    text-align: center;
+}
+.popup-controler{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+}
+.popup-controler span{
+    border: 1px solid #000;
+    padding: 0.2rem 1rem;
+    font-size: .8rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.modal.blind{
+    display: none;
+}
+.popup.blind{
+    display: none;
+}
