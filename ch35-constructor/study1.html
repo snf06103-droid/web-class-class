@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>생성자 함수</title>
+</head>
+<body>
+    <h1>생성자 함수</h1>
+    <p>생성자 함수란? 객체를 생성하는 함수를 뜻한다.</p>
+    <script>
+        let userName = prompt("당신의 이름을 적어주세요")
+        function Person(name,age){
+            this.name = uname 
+            this.age = uage
+            this.sayHello = function(){
+                alert(`안녕하세요 저는 ${this.name} 입니다`)
+            }
+            //붕어빵 틀에서 만들어지는 붕어빵을 여기서 this라고 한다.
+        } //생성자 함수는 변수명 만들 때 앞에 대문자로 쓴다
+        let person1 = new Person(userName,27) //name:"장윤서",age:27,sayHello:function(){alert(`안녕하세요 저는 장윤서 입니다`)}가 저장됨
+        let person2 = new Person(userName,29)
+        //생성자 함수는 앞에 뉴를 붙인다.
+        person1.sayHello()
+        person2.sayHello()
+    </script>
+</body>
+</html>
