@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이머함수</title>
+</head>
+<body>
+    <h1>setTimeout(동작,시간)</h1>
+    <p>입력한 일정시간 후에 입력한 특정동작이 실행되도록 예약하는 함수. 함수가 사용된 자리에 스케줄을 리턴한다.</p>
+    <h1>clearTimeout(예약)</h1>
+    <p>setTime()함수가 실행되고 남긴 스케줄을 취소하는 함수</p>
+    <script>
+        
+        let timer = setTimeout(function(){
+            alert('${}초가 지났습니다.')
+        },5000)//익명함수와 콤마 시간으로 표시한다. 
+        clearTimeout(timer)
+
+    </script>
+
+
+    <h1>setInterval(동작,시간)</h1>
+    <p>입력한 일정시간 마다 입력한 특정동작이 반복되개 하는 함수. 함수가 사용되 자리에 스케줄을 리턴한다.</p>
+    <h1>clearInterval</h1>
+    <p>setInterval함수가 만든 스케줄을 취소할 때 사용하는 함수</p>
+    <script>
+        let timer2 = setInterval(function(){
+            console.log("하하하")
+        },1000)
+
+        clearInterval(timer2)
+    </script>
+</body>
+</html>

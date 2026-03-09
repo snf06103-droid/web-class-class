@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 사용하기</title>
+</head>
+<body>
+    <h1>Date 객체</h1>
+    <p>Date 객체를 통해서 현재 날짜 정보를 가져올 수 있습니다.</p>
+    <p id="clock">현재 시간을 불러오는 중입니다.</p>
+
+    <script>
+
+        const clock = document.querySelector("#clock");
+
+        setInterval(function(){
+            const today = new Date();
+            const year = today.getFullYear();
+            const hour = today.getHours();
+            const month = today.getMonth();
+            const monthArray = ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"];
+            const date = today.getDate();
+            const minute = today.getMinutes();
+            const second = today.getSeconds();
+    
+            clock.innerHTML = `현재 ${year}년 ${monthArray[month]} ${date}일 ${hour}시 ${minute}분 ${second}초입니다.`;
+        })
+    </script>
+</body>
+</html>
