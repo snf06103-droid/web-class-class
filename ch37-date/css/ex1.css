@@ -1,55 +1,64 @@
+*{margin:0;padding:0;}
 .clock{
-    height: 100vh;
-    min-height: 500px; 
+    height:100vh;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: antiquewhite;
+    background-color: beige;
 }
 .clock.day{
-    background: url(../img/day.png) no-repeat 50% 50% / cover;
+    background: url("../img/day.png") no-repeat 50% 50% / cover;
 }
 .clock.night{
-    background: url(../img/night.png) no-repeat 50% 50% / cover;
+    background: url("../img/night.png") no-repeat 50% 50% / cover;
 }
-.clock.night .mode{
-    background: url(../img/night.png) no-repeat 50% 50% / cover;
-}
-.mode{
-    display: flex;
-    gap: 2rem;
-    position: absolute;
-    top: 1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    list-style: none;
-}
-.mode li{
-    padding: .5rem 1rem;
-    background-color: rgba(255, 255, 255, 0.877);
-    border-radius: 100px;
-    cursor: pointer;
-    color: #000;
-    border: 1px solid #fff;
-}
-.onday{
-    font-size: 4rem;
-}
-.ontime{
-    font-size: 8rem;
-}
-.time{
+#time{
     
-    padding: 2rem;
+    padding:2rem;
     border-radius: 20px;
     backdrop-filter: blur(3px);
+    
 }
-.clock.night .time{
-    background-color: #00000094;
-    border: 1px solid #000000;
+.clock.day #time{
+    background-color: rgba(255, 255, 255, 0.455);
+    border:1px solid #fff;
+    color:#000;
 }
-.clock.day .time{
-    background-color: #ffffff94;
-    border: 1px solid #fff;
+.clock.night #time{
+    background-color: rgba(0, 0, 0, 0.455);
+    border:1px solid #6a6a6a;
+    color:#fff;
+}
+
+.mode{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:1.5rem;
+    list-style: none;
+    display: flex;
+    gap:1rem;
+}
+.mode li{
+    padding:.5rem 2rem;
+    cursor: pointer;
+    border-radius: 100px;
+}
+.clock.day .mode li{
+    background-color: rgba(255, 255, 255, 0.741);
+    color:#000;
+    border:1px solid #fff;
+}
+.clock.night .mode li{
+    background-color: rgba(0, 0, 0, 0.741);
+    color:#ffffff;
+    border:1px solid #454545;
+}
+.onday{
+    font-size:3rem;
+}
+.ontime{
+    font-size:10rem;
 }
