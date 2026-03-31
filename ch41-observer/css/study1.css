@@ -1,0 +1,32 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f7fb; color: #1c2533; margin: 0; padding: 20px; }
+
+h1 { text-align: center; color: #334e8a; margin-bottom: 18px; }
+
+.content { max-width: 900px; margin: 0 auto; background: #ffffff; border-radius: 12px; box-shadow: 0 8px 20px rgba(45, 84, 145, 0.15); padding: 24px 28px; }
+
+section { margin-bottom: 18px; border-left: 4px solid #5179dd; padding-left: 12px; }
+
+section h3 { margin: 0 0 8px; color: #204080; }
+
+section p { margin: 4px 0 8px; line-height: 1.6; }
+
+ol, ul { margin: 10px 0 16px 20px; }
+
+li { margin-bottom: 6px; }
+
+@media (max-width: 768px) { body { padding: 12px; }
+  .content { padding: 18px; }
+  h1 { font-size: 1.6rem; }
+  section { margin-bottom: 14px; } }
+
+
+/* ���� �߰� */
+section {
+    margin-bottom: 24px;
+    padding: 45px 14px 32px;
+    background: #f8fbff;
+    border-radius: 8px;
+}
+section h3 { margin-bottom: 8px; }
+section p, section ol, section ul { margin-bottom: 12px; }
+
